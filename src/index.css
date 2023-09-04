@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  --swiper-theme-color: #ffff00!important;
+  --swiper-navigation-size: 30px!important;
+
+
+}
+.swiper-pagination-bullet{
+  background-color: white!important;
+
+}
+.swiper-pagination-bullet-active{
+  background-color: #ffff00!important;
+}
+.scrollFade {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.scrollFade--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scrollFade--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.scrollFade--animate {
+  transition: opacity 1.2s ease-in-out;
+}
