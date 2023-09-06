@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Experience from '../../../../Common/Experience/Experience';
+import './Experiences.css'
 
 const Experiences = () => {
 
@@ -12,11 +13,11 @@ const Experiences = () => {
     }, [])
 
     return (
-        <div className='w-11/12 m-auto py-28'>
-            <div className='text-center'>
+        <div className='w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 py-36 bg-white'>
+            <div className=''>
                 <p className='text-base font-semibold leading-7 text-[#ffff00] mb-3 scrollFade'>Experiences</p>
-                <h1 className='max-w-2xl m-auto mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white scrollFade'>Companies I have worked with</h1>
-                <p className='max-w-2xl lg:max-w-4xl lg:w-2xl w-[90%]  mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl text-center m-auto scrollFade'>The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt</p>
+                <h1 className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold text-black tracking-tight leading-none scrollFade mt-5'>Companies I have worked with</h1>
+                <p className='max-w-2xl lg:max-w-4xl lg:w-2xl w-[90%]  mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl scrollFade'>The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt</p>
             </div>
             <div className='md:grid lg:grid grid-cols-2 gap-10 scrollFade md:mt-16 lg:mt-16'>
                 {

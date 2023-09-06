@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import './SinglePortfolio.css'
 import { Link } from 'react-router-dom';
 import { ArrowUpRightIcon, RocketLaunchIcon } from '@heroicons/react/24/solid'
@@ -25,8 +25,8 @@ const SinglePortfolio = ({ portfolio }) => {
 // </div>
         <>
             <div className="relative grid h-[30rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-md bg-slate-800 text-left  shadow-lg scrollFade">
-                <div className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url(${portImg})] bg-cover bg-clip-border bg-center  shadow-none`}>
-                    <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/100 via-black/70"></div>
+                <div style={{backgroundImage:`url(${portImg})`}} className={`absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent  bg-cover bg-clip-border bg-center  shadow-none`}>
+                    <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/100 via-black/75"></div>
                 </div>
                 <div className="relative p-6  px-6 md:px-6">
                     <p className='backdrop-blur-lg bg-white/20 px-2 py-0.5 inline-block text-sm text-gray-300 rounded shadow-lg'>{ category}</p>

@@ -6,6 +6,7 @@ import Logo from '../../../../public/tasnimul-haque-logo.png'
 import MyResume from '../../../../public/Tasnimul Haque Resume.pdf';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import TopBanner from '../TopBanner/TopBanner';
+import { ArrowUpRightIcon } from '@heroicons/react/20/solid';
 
 const navigation = [
     { name: '<Home/>', href: '/' },
@@ -38,7 +39,7 @@ const Header = () => {
       {!isHidden && <TopBanner handleClickHidden={handleClickHidden}></TopBanner>}
       <div className="sticky top-0 z-[1000] bg-white" onScroll={changeNavBg}>
       <header className=" absolute inset-x-0 top-0 z-50">
-        <nav className={`flex items-center justify-between px-6 py-4 lg:px-8 ${navBg ? 'backdrop-blur bg-white/10' : ''}`} aria-label="Global">
+        <nav className={`flex items-center justify-between px-6 py-3 lg:px-8 ${navBg ? 'backdrop-blur bg-black/20' : ''}`} aria-label="Global">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Tasnimul Haque</span>
@@ -67,9 +68,9 @@ const Header = () => {
               </NavLink>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-[0.7rem] leading-6 text-white uppercase">
-              Resume <span aria-hidden="true">&rarr;</span>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end group group-* relative">
+            <a href="#" className="flex items-center text-[0.7rem] relative leading-6 text-black uppercase bg-[#ffff00] px-5 py-1">
+              Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
             </a>
           </div>
         </nav>

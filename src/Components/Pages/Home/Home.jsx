@@ -5,6 +5,7 @@ import Certification from './Home Components/Certification/Certification';
 import Experiences from './Home Components/Experiences/Experiences';
 import Portfolios from './Home Components/Portfolios/Portfolios';
 import Skills from './Home Components/Skills/Skills';
+import ContactMeBanner from '../../Common/ContactMeBanner/ContactMeBanner';
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
             <Certification></Certification>
             <Experiences></Experiences>
 
-            <section className="scrolling-text">
+            {/* <section className="scrolling-text">
                 <div className="scroll text1 ">
                 <div className="bg-[#ffff00]">
                 Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>
@@ -28,9 +29,10 @@ const Home = () => {
                 Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>
                 </div>
                 </div>
-            </section>
+            </section> */}
             <Skills/>
-            <Portfolios/>
+            <Portfolios />
+            <ContactMeBanner/>
 
         </div>
     );

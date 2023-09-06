@@ -4,8 +4,9 @@
 }
 body{
     background: radial-gradient(circle, #0C1221 0%, #000212 100%);
+    /* background-color: black; */
   }
-
+/* 
 .home:before,
 .home:after {
     content: '';
@@ -311,7 +312,7 @@ body{
     100% {
         transform: translateX(-200%);
     }
-}
+} */
 
 .scrolling-text .scroll.text1 {
     transform: rotate(0deg) translateY(200px) translateX(-200px);

@@ -1,4 +1,6 @@
-import {useState } from 'react'
+import { useState } from 'react'
+import { ArrowRightIcon, ArrowUpRightIcon } from '@heroicons/react/24/solid';
+
 
 import './Hero.css'
 
@@ -47,16 +49,16 @@ export default function Hero() {
     return (
         <div className="bg-black text-white h-[100vh] flex items-center">
 
-            <div className="mx-auto max-w-5xl py-32 sm:py-36 lg:py-36 ">
+            <div className="mx-auto w-full md:w-10/12 lg:w-10/12 xl:w-10/12 px-5 py-32 sm:py-36 lg:py-36 ">
 
                 <div className="text-center ">
-                    <h1 className="text-6xl font-bold tracking-tight text-white  isolate scrollFade">
+                    <h1 className="text-4xl lg:text-6xl md:text-6xl xl:text-7xl 2xl:text-7xl font-bold tracking-tight text-white  isolate scrollFade">
                         {selectedQuote.quote}
                     </h1>
-                    <p className="mt-6 text-lg leading-8 text-gray-200 scrollFade">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</p>
+                    <p className="mt-6 text-lg leading-8 text-gray-100 scrollFade">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</p>
                     <div className="mt-5 scrollFade">
-                        <button onClick={getQuote} className="text-sm  leading-6 text-[#ffff00] text-center">
-                            Try New Qoutes <span aria-hidden="true">→</span>
+                        <button onClick={getQuote} className="w-[11rem] m-auto group text-sm flex items-center justify-center leading-6 text-[#ffff00]">
+                            Try New Qoutes <span aria-hidden="true"><ArrowRightIcon className="h-5 w-5 relative text-[#ffff00] ml-1 group-hover:-mr-2 group-hover:ml-3"/></span>
                         </button>
                     </div>
                 </div>

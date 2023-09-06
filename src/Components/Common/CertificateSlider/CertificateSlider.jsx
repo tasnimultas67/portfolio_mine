@@ -1,4 +1,4 @@
-import { ShieldCheckIcon } from '@heroicons/react/24/solid';
+import { ArrowUpRightIcon, ShieldCheckIcon } from '@heroicons/react/24/solid';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'swiper/css';
@@ -18,7 +18,7 @@ const CertificateSlider = () => {
         .then(data => setCertificats(data))
     },[])
     return (
-        <Swiper id='certificates' className='w-11/12'
+        <Swiper id='certificates' className=''
     
        modules={[Navigation, Pagination, Scrollbar]}
       spaceBetween={30}
@@ -46,19 +46,19 @@ const CertificateSlider = () => {
             {
                 certificates.map(certificate => (
                     <SwiperSlide key={certificate._id} className='mb-5'>
-                        <div className=' backdrop-blur mb-5'>
-                    <div className="relative mb-6 sm:mb-0 p-6 rounded-md  border-t border-[#ffffff0d] duration-300 bg-slate-800 highlight-white/5 shadow-md">
+                        <div className='  bg-white mb-5 rounded shadow-md'>
+                    <div className="relative mb-6 sm:mb-0 p-6 rounded-md  border-t border-[#ffffff0d] duration-300 highlight-white/5 shadow-md">
                 <div className="">
-                    <div className='h-14 w-14 bg-slate-700 rounded-md flex justify-center items-center  mb-4 shadow-md'>
-                        <ShieldCheckIcon className="h-6 w-6 text-yellow-300" />
+                    <div className='h-14 w-14 rounded-md flex  items-center  mb-4'>
+                        <ShieldCheckIcon className="h-10 w-10 text-[#ffff00]" />
                     </div>
-                <h3 className="text-lg font-semibold text-white">{certificate.name}</h3>
-                <p className="block mb-2 text-sm font-normal  text-gray-300">{ certificate.scholl}</p>
-                <time className="block mb-2 text-sm font-normal  text-gray-200">Issue Date: {certificate.issueDate}</time>
-                <p className="block mb-2 text-sm font-normal  text-gray-200">Credential ID: { certificate.credentialId}</p>
-                <p className="text-sm font-normal text-gray-200">{certificate.description.length > 180 ? `${certificate.description.substring(0, 180)}...` : certificate.description}</p>
-                
-                <Link to={certificate.certificateURL} className=" inline-flex items-center mt-3 px-4 py-2 text-sm font-medium text-gray-300 bg-slate-700 border border-gray-700 rounded-lg hover:bg-gray-100 hover:text-yellow-500 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-yellow-500 dark:bg-gray-800 dark:text-gray-700 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Download <svg className="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></Link>
+                <h3 className="text-xl md:text-lg lg:text-lg xl:text-xl font-bold text-black mb-5">{certificate.name}</h3>
+                <p className=" text-sm font-semibold text-black">{ certificate.scholl}</p>
+                <time className="text-sm text-gray-800">Issue Date: {certificate.issueDate}</time>
+                <p className="block mb-2 text-sm font-normal  text-gray-800">Credential ID: { certificate.credentialId}</p>
+                <p className="text-base font-normal text-gray-800">{certificate.description.length > 180 ? `${certificate.description.substring(0, 130)}...` : certificate.description}</p>
+                <Link to={certificate.certificateURL} className="w-[10rem] justify-center group group-* mt-14 flex items-center text-sm relative leading-6 text-black uppercase bg-[#ffff00] px-6 py-3 ">Download <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
+                        </Link>
             </div>
             
         </div>
