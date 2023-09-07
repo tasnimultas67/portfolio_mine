@@ -46,18 +46,18 @@ const CertificateSlider = () => {
             {
                 certificates.map(certificate => (
                     <SwiperSlide key={certificate._id} className='mb-5'>
-                        <div className='  bg-white mb-5 rounded shadow-md'>
+                        <div className='  bg-white/10 backdrop-blur mb-5 rounded shadow-md'>
                     <div className="relative mb-6 sm:mb-0 p-6 rounded-md  border-t border-[#ffffff0d] duration-300 highlight-white/5 shadow-md">
                 <div className="">
                     <div className='h-14 w-14 rounded-md flex  items-center  mb-4'>
-                        <ShieldCheckIcon className="h-10 w-10 text-[#ffff00]" />
+                        <ShieldCheckIcon className="h-10 w-10 text-themeColor" />
                     </div>
-                <h3 className="text-xl md:text-lg lg:text-lg xl:text-xl font-bold text-black mb-5">{certificate.name}</h3>
-                <p className=" text-sm font-semibold text-black">{ certificate.scholl}</p>
-                <time className="text-sm text-gray-800">Issue Date: {certificate.issueDate}</time>
-                <p className="block mb-2 text-sm font-normal  text-gray-800">Credential ID: { certificate.credentialId}</p>
-                <p className="text-base font-normal text-gray-800">{certificate.description.length > 180 ? `${certificate.description.substring(0, 130)}...` : certificate.description}</p>
-                <Link to={certificate.certificateURL} className="w-[10rem] justify-center group group-* mt-14 flex items-center text-sm relative leading-6 text-black uppercase bg-[#ffff00] px-6 py-3 ">Download <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
+                <h3 className="text-xl md:text-lg lg:text-lg xl:text-xl font-bold text-white mb-5">{certificate.name}</h3>
+                <p className=" text-sm font-semibold text-white">{ certificate.scholl}</p>
+                <time className="text-sm text-gray-300">Issue Date: {certificate.issueDate}</time>
+                <p className="block mb-2 text-sm font-normal  text-gray-300">Credential ID: { certificate.credentialId}</p>
+                <p className="text-base font-normal text-gray-300">{certificate.description.length > 180 ? `${certificate.description.substring(0, 130)}...` : certificate.description}</p>
+                <Link to={certificate.certificateURL} className="w-[10rem] justify-center group group-* mt-14 flex items-center text-sm relative leading-6 text-black uppercase bg-themeColor px-6 py-3 ">Download <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
                         </Link>
             </div>
             

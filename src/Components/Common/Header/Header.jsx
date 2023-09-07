@@ -20,6 +20,9 @@ const Header = () => {
   const [navBg, setNavBg] = useState(false);
   const [isHidden, setIsHidden] = useState(false)
 
+  const location = useLocation()
+  const isContactPage = location.pathname === '/contact';
+  const classAbsolute = isContactPage ? '' : 'absolute';
     const changeNavBg = () => {
         window.scrollY >= 150 ? setNavBg(true) : setNavBg(false);
     }
@@ -38,8 +41,8 @@ const Header = () => {
       <>
       {!isHidden && <TopBanner handleClickHidden={handleClickHidden}></TopBanner>}
       <div className="sticky top-0 z-[1000] bg-white" onScroll={changeNavBg}>
-      <header className=" absolute inset-x-0 top-0 z-50">
-        <nav className={`flex items-center justify-between px-6 py-3 lg:px-8 ${navBg ? 'backdrop-blur bg-black/20' : ''}`} aria-label="Global">
+      <header className={`${classAbsolute} inset-x-0 top-0 z-50`}>
+        <nav className={`flex items-center justify-between px-6 py-3 lg:px-8 ${navBg ? 'backdrop-blur bg-black/20' : 'bg-black'}`} aria-label="Global">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Tasnimul Haque</span>
@@ -63,13 +66,13 @@ const Header = () => {
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <NavLink key={item.name} to={item.href} className={`${({ isActive, isPending }) =>
-    isActive ? "active" : isPending ? "pending" : "" } text-[0.7rem] hover:text-[#ffff00] uppercase leading-6 text-white `}>
+    isActive ? "active" : isPending ? "pending" : "" } text-[0.7rem] hover:text-themeColor uppercase leading-6 text-white `}>
                 {item.name}
               </NavLink>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end group group-* relative">
-            <a href="#" className="flex items-center text-[0.7rem] relative leading-6 text-black uppercase bg-[#ffff00] px-5 py-1">
+            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-black uppercase bg-themeColor px-5 py-1" download>
               Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
             </a>
           </div>
@@ -88,7 +91,7 @@ const Header = () => {
               </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-[#ffff00]"
+                className="-m-2.5 rounded-md p-2.5 text-themeColor"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -102,7 +105,7 @@ const Header = () => {
                     <NavLink
                       key={item.name}
                       to={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700 hover:text-[#ffff00]"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700 hover:text-themeColor"
                     >
                       {item.name}
                     </NavLink>

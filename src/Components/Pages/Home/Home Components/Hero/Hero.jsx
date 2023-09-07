@@ -57,8 +57,8 @@ export default function Hero() {
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-100 scrollFade">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</p>
                     <div className="mt-5 scrollFade">
-                        <button onClick={getQuote} className="w-[11rem] m-auto group text-sm flex items-center justify-center leading-6 text-[#ffff00]">
-                            Try New Qoutes <span aria-hidden="true"><ArrowRightIcon className="h-5 w-5 relative text-[#ffff00] ml-1 group-hover:-mr-2 group-hover:ml-3"/></span>
+                        <button onClick={getQuote} className="w-[11rem] m-auto group text-sm flex items-center justify-center leading-6 text-themeColor">
+                            Try New Qoutes <span aria-hidden="true"><ArrowRightIcon className="h-5 w-5 relative text-themeColor ml-1 group-hover:-mr-2 group-hover:ml-3"/></span>
                         </button>
                     </div>
                 </div>

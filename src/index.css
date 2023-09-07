@@ -13,6 +13,7 @@
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  --myThemeColor: #ffff00;
   /* --swiper-theme-color: #ffff00!important; */
   /* --swiper-navigation-size: 30px!important; */
 
