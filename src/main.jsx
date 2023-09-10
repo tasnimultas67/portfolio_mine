@@ -7,16 +7,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './Components/Pages/Home/Home.jsx';
-import About from './Components/Pages/Home/Home Components/About/About.jsx';
 import Contact from './Components/Pages/ContactMe/Contact.jsx';
 import Portfolio from './Components/Pages/Portfolio/Portfolio.jsx';
-import NotFound from './Components/Common/NotFound/NotFound.jsx';
 import AboutMe from './Components/Pages/AboutMe/AboutMe.jsx';
+import NotFound from './Components/NotFound/NotFound.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <NotFound/>,
     children: [
       {
         path: "/",
@@ -34,11 +34,7 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
-      },
-      {
-        path: "*",
-        element: <NotFound/>
-      },
+      }
     ]
   }
 ]);

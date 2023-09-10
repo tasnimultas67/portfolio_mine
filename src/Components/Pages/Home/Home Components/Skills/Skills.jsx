@@ -8,7 +8,6 @@ const Skills = () => {
             .then(res => res.json())
             .then(data =>setSkills(data))
     }, [])
-    console.log(skills);
     return (
         <div className='w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 py-28 relative isolate overflow-hidden bg-themeColor'>
             {/* <svg

@@ -1,17 +1,15 @@
-/* eslint-disable react/prop-types */
-import './SinglePortfolio.css'
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
-import { ArrowUpRightIcon, RocketLaunchIcon } from '@heroicons/react/24/solid'
 
-const SinglePortfolio = ({ portfolio }) => {
+const SinglePortfolioCard = ({portfolio}) => {
     const { portImg, portTitle, portDescription, siteLink, category } = portfolio
 
     return (
         <>
-           <div className="relative flex-col items-end justify-center overflow-hidden rounded-sm text-left scrollFade border border-black/10 hover:border-black/50">
+            <div className="relative flex-col items-end justify-center overflow-hidden rounded-sm text-left scrollFade border border-black/10 hover:border-black/50">
 
                 <div className="relative p-6  px-6 md:px-6">
-                    <img src={`${portImg}`} className="border border-black/10 mb-4" alt="Portfolio Image" />
+                    <img src={portImg} className="border border-black/10 mb-4" alt="Portfolio Image" />
                     <p className='backdrop-blur-lg bg-white/20 absolute top-[9.8rem] left-[2rem] px-2 py-0.5 inline-block text-sm text-[#ffff00] rounded shadow-lg'>{ category}</p>
                     <h2 className="mb-2 block font-sans text-2xl font-semibold text-black antialiased">{portTitle}</h2>
                     <p className="mb-4 block font-sans text-base  leading-snug tracking-normal text-gray-900 antialiased">{portDescription.length > 150 ? `${portDescription.substring(0, 150)}...` : portDescription}</p>
@@ -29,7 +27,7 @@ const SinglePortfolio = ({ portfolio }) => {
                 </div>
             </div>
         </>
-    );
+    )
 };
 
-export default SinglePortfolio;
+export default SinglePortfolioCard;

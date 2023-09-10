@@ -1,5 +1,5 @@
 
-import { Outlet } from 'react-router-dom'
+import { Outlet} from 'react-router-dom'
 import './App.css'
 import Header from './Components/Common/Header/Header'
 import Home from './Components/Pages/Home/Home'

@@ -1,20 +1,13 @@
-import { useEffect, useState } from 'react';
-import Certificate from '../../../../Common/Certificate/Certificate';
-import { Link } from 'react-router-dom';
+
 import './Certification.css'
 import CertificateSlider from '../../../../Common/CertificateSlider/CertificateSlider';
 
 const Certification = () => {
-    // const [certificates, setCertificats] = useState([])
-    // useEffect(() => {
-    //     fetch('https://raw.githubusercontent.com/tasnimultas67/data_json/main/certificates.json')
-    //         .then(res => res.json())
-    //     .then(data => setCertificats(data))
-    // },[])
+
     return (
       <>
       <div className='py-28 relative isolate overflow-hidden bg-gray-950'>
-            {/* <div
+            <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
         aria-hidden="true"
       >
@@ -37,7 +30,7 @@ const Certification = () => {
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
           }}
         />
-      </div> */}
+      </div>
             <div className='w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16'>
                 <div className='mb-16'>
                 <p className='text-8xl font-bold uppercase leading-8 scrollFade text-gray-900/[0.5]'>Certifications</p>

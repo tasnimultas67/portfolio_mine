@@ -17,7 +17,8 @@ function getAge(dateString) {
 
 export default function About() {
   const [age, setAge] = useState(null);
-  const [experience, setExperience] = useState(null)
+    const [experience, setExperience] = useState(null)
+    const tasnimulImage = "https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/375668856_326333556536514_7453168691461338886_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=5G8r6azYoqQAX_Q4R6J&_nc_ht=scontent.fdac14-1.fna&oh=00_AfB8yJjt20dc4OeEKiR7Ired4o0y8FZ5Xtd_eiDvMzXXiQ&oe=65004939"
 
   useEffect(() => {
       setAge(getAge("2003/12/24"));
@@ -46,9 +47,9 @@ export default function About() {
                     </div>
                     <div className='lg:sticky lg:top-4 flex items-center '>
                         <img
-                            src={Tasnimul}
+                            src={tasnimulImage}
                             alt="Tasnimul Haque Image"
-                            className="w-full sm:w-[38rem] md:w-[38rem] lg:w-[40rem] xl:w-[40rem] rounded-xl img-shadow ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 isolate scrollFade"
+                            className="w-full sm:w-[38rem] md:w-[38rem] lg:w-[40rem] xl:w-[40rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 isolate scrollFade"
                         />
                     </div>
                     
