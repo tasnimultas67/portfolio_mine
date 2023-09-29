@@ -6,9 +6,6 @@ import Experiences from './Home Components/Experiences/Experiences';
 import Portfolios from './Home Components/Portfolios/Portfolios';
 import Skills from './Home Components/Skills/Skills';
 import ContactMeBanner from '../../Common/ContactMeBanner/ContactMeBanner';
-import SimpleBanner from '../../Common/SimpleBanner/SimpleBanner';
-import ClientsReview from './Home Components/ClientsReview/ClientsReview';
-import SinglePortfolioCard from '../../Common/SinglePortfolioCard/SinglePortfolioCard';
 
 
 const Home = () => {

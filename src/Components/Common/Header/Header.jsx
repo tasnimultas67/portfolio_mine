@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useContext, useEffect, useState } from 'react';
 import './Header.css'
-import { Dialog } from '@headlessui/react'
+import { Dialog, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../../../../public/tasnimul-haque-logo.png'
 import MyResume from '../../../../public/Tasnimul Haque Resume.pdf';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import TopBanner from '../TopBanner/TopBanner';
 import { ArrowUpRightIcon } from '@heroicons/react/20/solid';
+import Tas from '../../../assets/Tasnimul Haque.jpg'
+import { AuthContext } from '../../Providers/AuthProviders';
 
 const navigation = [
     { name: '<Home/>', href: '/' },
@@ -16,7 +18,8 @@ const navigation = [
 ]
 
 const Header = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const {user, signOutUser} = useContext(AuthContext)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [navBg, setNavBg] = useState(false);
   const [isHidden, setIsHidden] = useState(false)
 
@@ -37,6 +40,14 @@ const Header = () => {
     setIsHidden(!isHidden);
   };
 
+  function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+  }
+  const handleSignOut = () => {
+        signOutUser()
+            .then()
+        .catch(error => console.error(error))
+    }
   return (
       <>
       {!isHidden && <TopBanner handleClickHidden={handleClickHidden}></TopBanner>}
@@ -75,7 +86,65 @@ const Header = () => {
             <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-black uppercase bg-themeColor px-5 py-1" download>
               Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
             </a>
-          </div>
+            </div>
+            {
+              user && <Menu as="div" className="relative ml-3">
+                  <div>
+                    <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <span className="absolute -inset-1.5" />
+                      <span className="sr-only">Open user menu</span>
+                      <img
+                        className="h-9 w-9 rounded-full ring-2 ring-[themeColor]"
+                        src={Tas}
+                        alt=""
+                      />
+                    </Menu.Button>
+                  </div>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            to="/addportfolio"
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                          >
+                            Add Portfolio
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            to="/manageportfolio"
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                          >
+                            Manage Portfolio
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      
+                      <Menu.Item>
+                        {({ active }) => (
+                      <button
+                        onClick={handleSignOut}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                          >
+                            Sign out
+                          </button>
+                        )}
+                      </Menu.Item>
+                    </Menu.Items>
+                  </Transition>
+                </Menu>
+            }
         </nav>
         <Dialog as="div" className="lg:hidden " open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />

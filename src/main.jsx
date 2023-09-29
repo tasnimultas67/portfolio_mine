@@ -11,6 +11,12 @@ import Contact from './Components/Pages/ContactMe/Contact.jsx';
 import Portfolio from './Components/Pages/Portfolio/Portfolio.jsx';
 import AboutMe from './Components/Pages/AboutMe/AboutMe.jsx';
 import NotFound from './Components/NotFound/NotFound.jsx';
+import AddPortfolio from './Components/Pages/AddPortfolio/AddPortfolio.jsx';
+import ManagePortfolio from './Components/Pages/ManagePortfolio/ManagePortfolio.jsx';
+import UpdatePortfolio from './Components/Pages/UpdatePortfolio/UpdatePortfolio.jsx';
+import Login from './Components/Pages/Login/Login.jsx';
+import AuthProviders from './Components/Providers/AuthProviders.jsx';
+import PrivateRoutes from './Components/Routes/PrivateRoutes.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,18 +35,38 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio />,
-        // loader: () => fetch('https://raw.githubusercontent.com/tasnimultas67/data_json/main/portfolio.json')
+        loader: () => fetch('http://localhost:5000/portfolio')
       },
       {
         path: "/contact",
         element: <Contact />
-      }
+      },
+      {
+        path: "/admin_login",
+        element: <Login />
+      },
+      {
+        path: "/addportfolio",
+        element: <PrivateRoutes><AddPortfolio/></PrivateRoutes>
+      },
+      {
+        path: "/manageportfolio",
+        element: <PrivateRoutes><ManagePortfolio /></PrivateRoutes>,
+        loader: () => fetch('http://localhost:5000/portfolio')
+      },
+      {
+        path: "/portfolio/update/:id",
+        element: <PrivateRoutes><UpdatePortfolio /></PrivateRoutes>,
+        loader: ({params}) => fetch(`http://localhost:5000/portfolio/${params.id}`)
+      },
     ]
   }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProviders>
     <RouterProvider router={router} />
+    </AuthProviders>
   </React.StrictMode>,
 )

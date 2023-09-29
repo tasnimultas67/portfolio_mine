@@ -2,14 +2,14 @@ import {useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import SinglePortfolio from "../../../../Common/SinglePortfolio/SinglePortfolio";
 import { ArrowUpRightIcon} from "@heroicons/react/24/solid";
-import SinglePortfolioCard from "../../../../Common/SinglePortfolioCard/SinglePortfolioCard";
+import SinglePortfolio from "../../../../Common/SinglePortfolio/SinglePortfolio";
 
 const Portfolios = () => {
 
     const [portfolios, setPortfolios] = useState([])
 
     useEffect(() => {
-        fetch('portfolio.json')
+        fetch('http://localhost:5000/portfolio')
             .then(res => res.json())
             .then(data =>setPortfolios(data))
     },[])
@@ -27,7 +27,7 @@ const Portfolios = () => {
                 </div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 pt-10'>
                     {
-                        portfolios.slice(0, 3).map(portfolio => <SinglePortfolioCard key={portfolio._id} portfolio={portfolio}/>)
+                        portfolios.slice(0, 3).map(portfolio => <SinglePortfolio key={portfolio._id} portfolio={portfolio}/>)
                     }
             </div>
 

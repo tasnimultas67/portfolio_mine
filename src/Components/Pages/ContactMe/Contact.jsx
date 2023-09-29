@@ -18,18 +18,18 @@ export default function Contact() {
       </div>
 
       {/* Google Map Ended */}
-    <div className="isolate px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate px-6 py-24 sm:py-32 lg:px-8 bg-white">
       
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Contact sales</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-400">
+        <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">Contact sales</h2>
+        <p className="mt-2 text-lg leading-8 text-gray-700">
           Aute magna irure deserunt veniam aliqua magna enim voluptate.
         </p>
       </div>
-      <form action="/" method="POST" className="mx-auto mt-16 max-w-3xl sm:mt-20 bg-slate-800 p-10 rounded-md shadow-md">
+      <form action="/" method="POST" className="mx-auto mt-16 max-w-3xl sm:mt-20 bg-gray-200 p-10 rounded-md shadow-xl">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-200">
+            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-black">
               First name
             </label>
             <div className="mt-2.5">
@@ -43,7 +43,7 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-200">
+            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-black">
               Last name
             </label>
             <div className="mt-2.5">
@@ -57,7 +57,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-200">
+            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-black">
               Company
             </label>
             <div className="mt-2.5">
@@ -71,7 +71,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-200">
+            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-black">
               Email
             </label>
             <div className="mt-2.5">
@@ -85,7 +85,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-200">
+            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-black">
               Phone number
             </label>
             <div className="relative mt-2.5">
@@ -98,6 +98,7 @@ export default function Contact() {
                   name="country"
                   className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-blackfocus:ring-2 focus:ring-inset focus:ring-[#ffff00] sm:text-sm"
                 >
+                  <option>BD</option>
                   <option>US</option>
                   <option>CA</option>
                   <option>EU</option>
@@ -117,7 +118,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-200">
+            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-black">
               Message
             </label>
             <div className="mt-2.5">
@@ -150,7 +151,7 @@ export default function Contact() {
                 />
               </Switch>
             </div>
-            <Switch.Label className="text-sm leading-6 text-gray-300">
+            <Switch.Label className="text-sm leading-6 text-black">
               By selecting this, you agree to our{' '}
               <a href="#" className="font-semibold text-[#ffff00]">
                 privacy&nbsp;policy
