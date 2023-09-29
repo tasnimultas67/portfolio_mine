@@ -21,7 +21,7 @@ const UpdatePortfolio = () => {
         const updatedPortfolio = { portfolioTitle, portfolioCategory, portfolioImgLink, portfolioDetails, portfolioLiveLink }
 
         // Send data to the server
-        fetch(`http://localhost:5000/portfolio/${_id}`, {
+        fetch(`https://portfolio-backend-server.vercel.app/portfolio/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type' : 'application/json'

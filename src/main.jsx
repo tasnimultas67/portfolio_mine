@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio />,
-        loader: () => fetch('http://localhost:5000/portfolio')
+        loader: () => fetch('https://portfolio-backend-server.vercel.app/portfolio')
       },
       {
         path: "/contact",
@@ -52,12 +52,12 @@ const router = createBrowserRouter([
       {
         path: "/manageportfolio",
         element: <PrivateRoutes><ManagePortfolio /></PrivateRoutes>,
-        loader: () => fetch('http://localhost:5000/portfolio')
+        loader: () => fetch('https://portfolio-backend-server.vercel.app/portfolio')
       },
       {
         path: "/portfolio/update/:id",
         element: <PrivateRoutes><UpdatePortfolio /></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/portfolio/${params.id}`)
+        loader: ({params}) => fetch(`https://portfolio-backend-server.vercel.app/portfolio/${params.id}`)
       },
     ]
   }

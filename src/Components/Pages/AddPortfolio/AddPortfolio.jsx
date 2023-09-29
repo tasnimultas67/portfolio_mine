@@ -17,7 +17,7 @@ const AddPortfolio = () => {
         console.log(portInfo);
 
         // Send data to the server
-        fetch('http://localhost:5000/portfolio', {
+        fetch('https://portfolio-backend-server.vercel.app/portfolio', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'
