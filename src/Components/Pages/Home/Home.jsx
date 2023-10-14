@@ -6,6 +6,8 @@ import Experiences from './Home Components/Experiences/Experiences';
 import Portfolios from './Home Components/Portfolios/Portfolios';
 import Skills from './Home Components/Skills/Skills';
 import ContactMeBanner from '../../Common/ContactMeBanner/ContactMeBanner';
+import ClientLogo from '../../Common/ClientLogo/ClientLogo';
+import WhyChoose from './Home Components/WhyChoose/WhyChoose';
 
 
 const Home = () => {
@@ -14,28 +16,13 @@ const Home = () => {
 
             <Hero></Hero>
             <About></About>
-            <Certification></Certification>
-            <Experiences></Experiences>
-
-            {/* <section className="scrolling-text">
-                <div className="scroll text1 ">
-                <div className="bg-[#ffff00]">
-                Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>
-                </div>
-                <div className="bg-[#ffff00]">
-                Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>
-                </div>
-                <div>
-                Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>Tasnimul <span>Haque • </span>
-                </div>
-                </div>
-            </section> */}
+            {/* <Certification></Certification> */}
+            <WhyChoose></WhyChoose>
+            <Experiences ></Experiences>
             <Skills/>
             <Portfolios />
-            {/* <SinglePortfolioCard/> */}
-            {/* <ClientsReview/> */}
+            <ClientLogo></ClientLogo>
             <ContactMeBanner />
-            {/* <SimpleBanner/> */}
 
         </div>
     );

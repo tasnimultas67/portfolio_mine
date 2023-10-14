@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
-import SinglePortfolio from '../../Common/SinglePortfolio/SinglePortfolio';
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
+
+import SinglePortfolioCard from '../../Common/SinglePortfolioCard/SinglePortfolioCard';
 
 const Portfolio = () => {
     const loadedPortfolios = useLoaderData()
@@ -23,7 +23,7 @@ const Portfolio = () => {
             </div>
             <div className='grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6'>
                 {
-                    portfolios.map(portfolio => <SinglePortfolio key={portfolio._id} portfolio={portfolio}/>)
+                    portfolios.map(portfolio => <SinglePortfolioCard key={portfolio._id} portfolio={portfolio}/>)
                 }
             </div>
         </div>

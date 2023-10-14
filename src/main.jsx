@@ -17,6 +17,7 @@ import UpdatePortfolio from './Components/Pages/UpdatePortfolio/UpdatePortfolio.
 import Login from './Components/Pages/Login/Login.jsx';
 import AuthProviders from './Components/Providers/AuthProviders.jsx';
 import PrivateRoutes from './Components/Routes/PrivateRoutes.jsx';
+import SinglePortfolio from './Components/Pages/SinglePortfolio/SinglePortfolio.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
         path: "/portfolio",
         element: <Portfolio />,
         loader: () => fetch('https://portfolio-backend-server.vercel.app/portfolio')
+      },
+      {
+        path: "/portfolio/:id",
+        element: <SinglePortfolio />,
+        loader: ({params}) => fetch(`https://portfolio-backend-server.vercel.app/portfolio/${params.id}`)
       },
       {
         path: "/contact",

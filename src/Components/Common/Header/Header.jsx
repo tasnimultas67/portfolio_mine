@@ -76,18 +76,21 @@ const Header = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <NavLink key={item.name} to={item.href} className={`${({ isActive, isPending }) =>
-    isActive ? "active" : isPending ? "pending" : "" } text-[0.7rem] hover:text-themeColor uppercase leading-6 text-white `}>
+              <NavLink
+              style={({ isActive, isPending }) => {
+                        return {
+                          color: isActive ? "yellow" : "white",}
+                }}
+                key={item.name} to={item.href} className={`text-[0.7rem] hover:text-themeColor uppercase leading-6 text-white `}>
                 {item.name}
               </NavLink>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end group group-* relative">
-            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-black uppercase bg-themeColor px-5 py-1" download>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end  relative">
+            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-black uppercase bg-themeColor px-5 py-1 group group-*" download>
               Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
-            </a>
-            </div>
-            {
+              </a>
+              {
               user && <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -145,6 +148,8 @@ const Header = () => {
                   </Transition>
                 </Menu>
             }
+          </div>
+            
         </nav>
         <Dialog as="div" className="lg:hidden " open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
@@ -172,6 +177,10 @@ const Header = () => {
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <NavLink
+                      style={({ isActive, isPending }) => {
+                        return {
+                          color: isActive ? "yellow" : "white",}
+                      }}
                       key={item.name}
                       to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-700 hover:text-themeColor"
