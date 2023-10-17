@@ -1,7 +1,6 @@
 import './Home.css'
 import Hero from './Home Components/Hero/Hero';
 import About from './Home Components/About/About';
-import Certification from './Home Components/Certification/Certification';
 import Experiences from './Home Components/Experiences/Experiences';
 import Portfolios from './Home Components/Portfolios/Portfolios';
 import Skills from './Home Components/Skills/Skills';
@@ -16,7 +15,6 @@ const Home = () => {
 
             <Hero></Hero>
             <About></About>
-            {/* <Certification></Certification> */}
             <WhyChoose></WhyChoose>
             <Experiences ></Experiences>
             <Skills/>

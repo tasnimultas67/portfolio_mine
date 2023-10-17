@@ -20,7 +20,7 @@ export default function ManagePortfolio() {
             }).then((result) => {
             if (result.isConfirmed) {
                 
-                fetch(`https://portfolio-backend-server.vercel.app/portfolio/${_id}`, {
+                fetch(`https://portfoliobackendserver-tasnimul.up.railway.app/portfolio/${_id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())

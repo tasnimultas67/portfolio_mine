@@ -16,18 +16,23 @@ function getAge(dateString) {
     return age;
 }
 
+
+
 export default function About() {
+    
+    
   const [age, setAge] = useState(null);
-    const [experience, setExperience] = useState(null)
     const tasnimulImage = "https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/375668856_326333556536514_7453168691461338886_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=OBzLZHreO7IAX_kz6iQ&_nc_ht=scontent.fdac14-1.fna&oh=00_AfBfNz-kSYNp_ovzreEJq3CELGbQdnYY_QI-D_2aMrLaYA&oe=6521E779"
 
   useEffect(() => {
       setAge(getAge("2003/12/24"));
-      setExperience(getAge("2019/11/02"))
+
+
   }, []);
 
+    
     return (
-        <div className="overflow-hidden  pt-40 pb-24 bg-white isolate z-50">
+        <div className="overflow-hidden  pt-40 pb-44 bg-white isolate z-50">
             <div className="w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 justify-center">
                 <div className=''>
                     <h1 className=" mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none scrollFade">A visual designer focused on creating emotional digital experience</h1>
@@ -45,12 +50,13 @@ export default function About() {
                             <img className='md:w-[10rem] lg:w-[11rem] xl:w-[11rem] w-[9rem] mt-2' src={signature} alt="Tasnimul Signature" />
                         </div>
                     </div>
-                    <div className='lg:sticky lg:top-4 -mt-16 flex items-center '>
+                    <div className=' -mt-16 '>
                         <img
                             src={Tasnimul}
                             alt="Tasnimul Haque Image"
                             className="w-full sm:w-[38rem] md:w-[38rem] lg:w-[40rem] xl:w-[40rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 isolate scrollFade"
                         />
+                            
                     </div>
                     
                 </div>

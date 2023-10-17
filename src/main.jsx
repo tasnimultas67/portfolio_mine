@@ -36,12 +36,12 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio />,
-        loader: () => fetch('https://portfolio-backend-server.vercel.app/portfolio')
+        loader: () => fetch('https://portfoliobackendserver-tasnimul.up.railway.app/portfolio')
       },
       {
         path: "/portfolio/:id",
         element: <SinglePortfolio />,
-        loader: ({params}) => fetch(`https://portfolio-backend-server.vercel.app/portfolio/${params.id}`)
+        loader: ({params}) => fetch(`https://portfoliobackendserver-tasnimul.up.railway.app/portfolio/${params.id}`)
       },
       {
         path: "/contact",
@@ -58,12 +58,12 @@ const router = createBrowserRouter([
       {
         path: "/manageportfolio",
         element: <PrivateRoutes><ManagePortfolio /></PrivateRoutes>,
-        loader: () => fetch('https://portfolio-backend-server.vercel.app/portfolio')
+        loader: () => fetch('https://portfoliobackendserver-tasnimul.up.railway.app/portfolio')
       },
       {
         path: "/portfolio/update/:id",
         element: <PrivateRoutes><UpdatePortfolio /></PrivateRoutes>,
-        loader: ({params}) => fetch(`https://portfolio-backend-server.vercel.app/portfolio/${params.id}`)
+        loader: ({params}) => fetch(`https://portfoliobackendserver-tasnimul.up.railway.app/portfolio/${params.id}`)
       },
     ]
   }

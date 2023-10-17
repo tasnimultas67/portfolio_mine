@@ -55,10 +55,10 @@ const AboutMe = () => {
             <div className=''>
                 <div className='py-40 bg-white'>
                     <div className='w-10/12 m-auto'>
-                        <h1 className='text-center text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-900 to-black'>Not a dev, designer and most certainly not a role model. Just a stray cat trying to survive.</h1>
-                        <img className='m-auto rounded-3xl mt-28 shadow-xl' src={tasnimulAboutBanner} alt="Tasnimul Image" srcSet="" />
+                        <h1 className='text-center text-7xl font-extrabold '>Not a dev, designer and most certainly not a role model. Just a stray cat trying to survive.</h1>
+                        <img className='m-auto mt-28 shadow-xl ' src={tasnimulAboutBanner} alt="Tasnimul Image" srcSet="" />
                         {/* Details about me */}
-                        <div className="w-11/12 m-auto mt-20 text-3xl leading-10 font-medium">
+                        <div className="w-11/12 m-auto mt-20 text-2xl leading-10 ">
                                     
                             <p className="   mt-6 text-gray-900 Roobert-font">Hello, I am Tasnimul Haque! I'm a {age}-year-old developer and student based in Dhaka, Bangladesh. I completed a Higher Secondary Certificate degree from Bhola Govt College in 2021. Now I am doing BSS(Hons) in the Political Science department.</p>
 

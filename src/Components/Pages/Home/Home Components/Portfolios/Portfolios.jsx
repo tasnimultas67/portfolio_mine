@@ -9,7 +9,7 @@ const Portfolios = () => {
     const [portfolios, setPortfolios] = useState([])
 
     useEffect(() => {
-        fetch('https://portfolio-backend-server.vercel.app/portfolio')
+        fetch('https://portfoliobackendserver-tasnimul.up.railway.app/portfolio')
             .then(res => res.json())
             .then(data =>setPortfolios(data))
     },[])

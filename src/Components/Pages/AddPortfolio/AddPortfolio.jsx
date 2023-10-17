@@ -17,7 +17,7 @@ const AddPortfolio = () => {
         console.log(portInfo);
 
         // Send data to the server
-        fetch('https://portfolio-backend-server.vercel.app/portfolio', {
+        fetch('https://portfoliobackendserver-tasnimul.up.railway.app/portfolio', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

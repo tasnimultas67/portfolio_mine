@@ -25,33 +25,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   --myThemeColor: #ffff00;
-  /* --swiper-theme-color: #ffff00!important; */
-  /* --swiper-navigation-size: 30px!important; */
-
-
-}
-/* .swiper-pagination-bullet{
-  background-color: black!important;
-
-} */
-/* .swiper-pagination-bullet-active{
-  background-color: #ffff00!important;
-} */
-.scrollFade {
-  opacity: 1;
-  pointer-events: all;
 }
 
-.scrollFade--hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.scrollFade--visible {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.scrollFade--animate {
-  transition: opacity 1.2s ease-in-out;
+.bg-styled{
+background:
+    repeating-linear-gradient(30deg, #fff2 0 10%, #fff0 0 24%),
+    repeating-linear-gradient(-23deg, #fff2 0 4%, #fff0 0 14%) yellow;
 }

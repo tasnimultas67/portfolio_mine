@@ -2,7 +2,7 @@
 const WhyChoose = () => {
     return (
         <>
-            <div className="bg-themeColor py-32">
+            <div className="bg-styled py-32">
                 <div className="w-10/12 m-auto">
                     <div className="w-7/12">
                         <h4 className="text-xl font-bold pb-4">WHY CHOOSE ME?</h4>
