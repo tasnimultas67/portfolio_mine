@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { ArrowRightIcon, ArrowUpRightIcon } from '@heroicons/react/24/solid';
-
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
+import {motion} from 'framer-motion'
 
 import './Hero.css'
 
@@ -52,14 +52,35 @@ export default function Hero() {
             <div className="mx-auto w-full md:w-10/12 lg:w-10/12 xl:w-10/12 px-5 py-32 sm:py-36 lg:py-36 ">
 
                 <div className="text-center ">
-                    <h1 className="text-4xl lg:text-6xl md:text-6xl xl:text-7xl 2xl:text-7xl font-bold tracking-tight text-white  isolate scrollFade">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{
+                            duration: 0.5,
+                        }}
+                        viewport={{ once: true }}
+                        className="text-4xl lg:text-6xl md:text-6xl xl:text-7xl 2xl:text-7xl font-bold tracking-tight text-white  isolate scrollFade">
                         {selectedQuote.quote}
-                    </h1>
-                    <p className="mt-6 text-lg leading-8 text-gray-100 scrollFade">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</p>
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{
+                            duration: 0.7,
+                        }}
+                        viewport={{ once: true }}
+                        className="mt-6 text-lg leading-8 text-gray-100 scrollFade">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</motion.p>
                     <div className="mt-5 scrollFade">
-                        <button onClick={getQuote} className="w-[11rem] m-auto group text-sm flex items-center justify-center leading-6 text-themeColor">
+                        <motion.button
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{opacity: 1, y: 0}}
+                            transition={{
+                                duration: 0.8,
+                            }}
+                            viewport={{ once: true }}
+                            onClick={getQuote} className="w-[11rem] m-auto group text-sm flex items-center justify-center leading-6 text-themeColor">
                             Try New Qoutes <span aria-hidden="true"><ArrowRightIcon className="h-5 w-5 relative text-themeColor ml-1 group-hover:-mr-2 group-hover:ml-3"/></span>
-                        </button>
+                        </motion.button>
                     </div>
                 </div>
             </div>

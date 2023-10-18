@@ -50,10 +50,10 @@ export default function ManagePortfolio() {
                 {portfolios.map((portfolio) => (
                     <li key={portfolio._id} className="flex justify-between items-center gap-x-6 py-5 rounded hover:shadow-md hover:bg-[#ffff00] px-5">
                     <div className="flex min-w-0 gap-x-4">
-                        <img className="h-14 w-14 flex-none object-cover bg-gray-50" src="https://images.unsplash.com/photo-1695726594598-3cc937112d7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="" />
+                        <img className="h-14 w-14 flex-none object-cover bg-gray-50" src={portfolio.portfolioImgLink} alt="Portfolio Image" loading="lazy" />
                         <div className="min-w-0 flex-auto">
                         <p className="text-sm font-semibold leading-6 text-gray-900">{portfolio.portfolioTitle}</p>
-                        {/* <p className="mt-1 truncate text-xs leading-5 text-gray-500">{portfolios.portfolioDetails.length > 50 ? `${portfolios.portfolioDetails.substring(0, 50)}...` : portfolios.portfolioDetails}</p> */}
+                        
                         <p className="mt-1 truncate text-xs leading-5 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, iusto.</p>
                         </div>
                     </div>

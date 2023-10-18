@@ -9,6 +9,7 @@ import TopBanner from '../TopBanner/TopBanner';
 import { ArrowUpRightIcon } from '@heroicons/react/20/solid';
 import Tas from '../../../assets/Tasnimul Haque.jpg'
 import { AuthContext } from '../../Providers/AuthProviders';
+import { motion } from "framer-motion"
 
 const navigation = [
     { name: '<Home/>', href: '/' },
@@ -201,6 +202,7 @@ const Header = () => {
             </div>
           </Dialog.Panel>
         </Dialog>
+          
             </header>
             </div>
 
@@ -210,3 +212,4 @@ const Header = () => {
 };
 
 export default Header;
+
