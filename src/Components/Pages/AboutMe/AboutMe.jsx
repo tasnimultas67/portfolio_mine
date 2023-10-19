@@ -39,7 +39,7 @@ const AboutMe = () => {
                                 }}
                                     viewport={{ once: true }}
                                 
-                                className='text-center text-7xl font-extrabold '>Not a dev, designer and most certainly not a role model. Just a stray cat trying to survive.
+                                className='text-center text-3xl md:text-7xl font-extrabold '>Not a dev, designer and most certainly not a role model. Just a stray cat trying to survive.
                             </motion.h1>
                         </div>
                         <motion.img

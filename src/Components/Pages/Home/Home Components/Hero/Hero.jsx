@@ -59,7 +59,7 @@ export default function Hero() {
                             duration: 0.5,
                         }}
                         viewport={{ once: true }}
-                        className="text-4xl lg:text-6xl md:text-6xl xl:text-7xl 2xl:text-7xl font-bold tracking-tight text-white  isolate scrollFade">
+                        className="text-5xl lg:text-6xl md:text-6xl xl:text-7xl 2xl:text-7xl font-bold tracking-tight text-white  isolate scrollFade">
                         {selectedQuote.quote}
                     </motion.h1>
                     <motion.p
@@ -69,7 +69,7 @@ export default function Hero() {
                             duration: 0.7,
                         }}
                         viewport={{ once: true }}
-                        className="mt-6 text-lg leading-8 text-gray-100 scrollFade">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</motion.p>
+                        className="mt-6 text-base md:text-lg md:leading-8 text-gray-100 scrollFade">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</motion.p>
                     <div className="mt-5 scrollFade">
                         <motion.button
                             initial={{ opacity: 0, y: 100 }}

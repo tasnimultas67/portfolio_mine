@@ -26,7 +26,7 @@ const Footer = () => {
         <>
             <div className='w-11/12 m-auto'>
                 <div className='py-24 flex flex-col gap-y-10'>
-                    <h2 className='text-white text-2xl '>HAVE A NICE WORKS? LET’S TALK WITH ME</h2>
+                    <h2 className='text-white text-xl md:text-2xl '>HAVE A NICE WORKS? LET’S TALK WITH ME</h2>
 
                     <div className='text-gray-300 text-4xl md:text-7xl lg:text-8xl xl:text-8xl font-extrabold block md:flex lg:flex xl:flex 2xl:flex items-center'>
                         <h2>hello</h2>
@@ -39,7 +39,7 @@ const Footer = () => {
                 <hr className='border-gray-800'/>
                 <div className='py-12'>
                     <div className='lg:flex justify-between items-center'>
-                        <div className='flex gap-5'>
+                        <div className='flex gap-5 justify-center md:justify-start'>
                             {
                                 navigation.map(item => (
                                     <NavLink
@@ -51,15 +51,11 @@ const Footer = () => {
                                         className="text-white text-xl hover:text-themeColor" to={item.href} key={item.name}>{item.name}</NavLink>
                                 ))
                             }
-                            {/* {
-                                navigation.map(item => (
-                                    <NavLink className={` text-xl ${({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}`} to={item.href} key={item.name}>{ item.name}</NavLink>
-                                ))
-                            } */}
+                            
                         </div>
                         <div>
                             {/* Social Media Link */}
-                         <div className='flex gap-3'>
+                         <div className='flex gap-3 justify-center md:justify-start mt-5 md:mt-0'>
                              {/* Facebook Link */}
                             
                          <Link className='' to={facebook} target='_blank'>
@@ -97,12 +93,12 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex justify-between items-center pb-7'>
+                <div className='md:flex block m-auto justify-between items-center pb-7'>
                    
                     <Link className='buyMeCoffee bg-themeColor' target="_blank" to="https://www.buymeacoffee.com/tasnimulhaque" rel="noreferrer">
-                           <img className=' bg-themeColor' src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tasnimulhaque&button_colour=FFFF00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
+                           <img  className=' bg-themeColor m-auto mb-5 md:mb-0' src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tasnimulhaque&button_colour=FFFF00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
                     </Link>
-                     <p className='text-gray-400'>©{copyWriteYear} All Rights Reserved. Designed with 🤍</p>
+                     <p className='text-gray-400 text-center md:text-start'>©{copyWriteYear} All Rights Reserved. Designed with 🤍</p>
                 </div>
             </div>
         </>

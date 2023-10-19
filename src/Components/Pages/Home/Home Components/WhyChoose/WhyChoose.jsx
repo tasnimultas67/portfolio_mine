@@ -12,7 +12,7 @@ const WhyChoose = () => {
                             duration: 0.5,
                         }}
                         viewport={{ once: true }}
-                        className="w-7/12">
+                        className="md:w-7/12">
                         <h4 className="text-xl font-bold pb-4">WHY CHOOSE ME?</h4>
                         <div  className="text-2xl gap-y-5 flex flex-col">
                             <p>In collaboration with startups and freelancers, I craft visually stunning and innovative websites, graphic designs, logos, and brands. </p>
