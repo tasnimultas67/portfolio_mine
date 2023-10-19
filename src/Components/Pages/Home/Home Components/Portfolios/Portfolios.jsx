@@ -35,16 +35,17 @@ const Portfolios = () => {
                     viewport={{ once: true }}
                     className='max-w-2xl lg:max-w-5xl lg:w-5xl  mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl scrollFade'>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.” - Steve Jobs</motion.p>
 
-                <motion.Link
-                initial={{ opacity: 0, y: 100 }}
-                    whileInView={{opacity: 1, y: 0}}
-                    transition={{
-                        duration: 0.9,
-                    }}
-                    viewport={{ once: true }}
-                    to="/portfolio" className="w-[11rem] justify-center group group-* mt-10 flex items-center text-sm relative leading-6 text-black uppercase bg-white px-6 py-3 ">
+                <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{
+                            duration: 0.9,
+                        }}
+                        viewport={{ once: true }}>
+                    <Link to="/portfolio" className="w-fit justify-center group group-* mt-10 flex items-center text-sm relative leading-6 text-black uppercase bg-white px-8 py-3 cursor-pointer">
                         See More <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
-                        </motion.Link>
+                    </Link>
+                </motion.div>
                 </div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 pt-10'>
                     {

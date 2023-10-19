@@ -46,7 +46,7 @@ export default function About() {
                     <h1
                     
                         className=" mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none scrollFade">A visual designer focused on creating emotional digital experience</h1>
-                    <Link to="/about" className="w-[11rem] justify-center group group-* mt-14 flex items-center text-sm relative leading-6 text-black uppercase bg-themeColor px-6 py-3 ">
+                    <Link to="/about" className="w-fit justify-center group group-* mt-14 flex items-center text-sm relative leading-6 text-black uppercase bg-themeColor px-8 py-3 ">
                         Know More <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
                         </Link>
                 </motion.div>
