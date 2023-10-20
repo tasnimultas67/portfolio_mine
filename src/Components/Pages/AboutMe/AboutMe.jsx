@@ -27,10 +27,10 @@ const AboutMe = () => {
     return (
         <>
             <div className=''>
-                <div className='py-40 bg-white'>
-                    <div className='w-10/12 m-auto'>
+                <div className=' py-28 md:py-40 bg-white'>
+                    <div className='w-11/12 md:w-10/12 m-auto'>
                         {/* Title */}
-                        <div className='pb-24 pt-20'>
+                        <div className='md:pb-24 pt-20'>
                             <motion.h1
                                 initial={{ opacity: 0, y: 200 }}
                                 whileInView={{opacity: 1, y: 0}}
@@ -49,9 +49,9 @@ const AboutMe = () => {
                                     duration: 0.5,
                                 }}
                                     viewport={{ once: true }}
-                            className='m-auto mt-28 shadow-xl ' loading='lazy' src={tasnimulAboutBanner} alt="Tasnimul Image" srcSet="" />
+                            className='m-auto mt-28 shadow-xl h-80 object-cover  ' loading='lazy' src={tasnimulAboutBanner} alt="Tasnimul Image" srcSet="" />
                         {/* Details about me */}
-                        <div className="w-11/12 m-auto mt-20 text-2xl leading-10 ">
+                        <div className="md:w-11/12 m-auto mt-20 text-xl leading-7 md:text-2xl md:leading-10 ">
                                     
                             <motion.p
                                 initial={{ opacity: 0, y: 100 }}

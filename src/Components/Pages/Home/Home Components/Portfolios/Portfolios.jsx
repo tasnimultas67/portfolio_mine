@@ -42,7 +42,7 @@ const Portfolios = () => {
                             duration: 0.9,
                         }}
                         viewport={{ once: true }}>
-                    <Link to="/portfolio" className="w-fit justify-center group group-* mt-10 flex items-center text-sm relative leading-6 text-black uppercase bg-white px-8 py-3 cursor-pointer">
+                    <Link to="/portfolio" className="w-fit justify-center group group-* md:mt-10 flex items-center text-sm relative leading-6 text-black uppercase bg-white px-8 py-3 cursor-pointer">
                         See More <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
                     </Link>
                 </motion.div>
