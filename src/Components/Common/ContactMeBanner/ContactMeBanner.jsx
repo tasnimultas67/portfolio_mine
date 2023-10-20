@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function ContactMeBanner() {
     return (
         <>
-            <section className="bg-white md:pb-48 pb-28 pt-36 overflow-hidden" >
+            <section className="bg-white md:pb-40 pb-28 pt-36 overflow-hidden" >
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{opacity: 1, y: 0}}

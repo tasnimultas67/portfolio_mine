@@ -42,6 +42,7 @@ const AboutMe = () => {
                                 className='text-center text-3xl md:text-7xl font-extrabold '>Not a dev, designer and most certainly not a role model. Just a stray cat trying to survive.
                             </motion.h1>
                         </div>
+                        {/* Image */}
                         <motion.img
                             initial={{ opacity: 0, y: 200 }}
                                 whileInView={{opacity: 1, y: 0}}
@@ -49,7 +50,7 @@ const AboutMe = () => {
                                     duration: 0.5,
                                 }}
                                     viewport={{ once: true }}
-                            className='m-auto mt-28 shadow-xl h-80 object-cover  ' loading='lazy' src={tasnimulAboutBanner} alt="Tasnimul Image" srcSet="" />
+                            className='m-auto mt-28 shadow-xl h-80 md:h-[100%]  md:max-h-none w-12/12 object-cover rounded ' loading='lazy' src={tasnimulAboutBanner} alt="Tasnimul Image" srcSet="" />
                         {/* Details about me */}
                         <div className="md:w-11/12 m-auto mt-20 text-xl leading-7 md:text-2xl md:leading-10 ">
                                     

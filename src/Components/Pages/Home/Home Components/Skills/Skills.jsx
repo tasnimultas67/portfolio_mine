@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './Skills.css'
 import SkillLogo from '../../../../Common/SkillLogo/SkillLogo';
 import { motion } from 'framer-motion'
+import SkillLogoGrid from '../../../../Common/SkillLogo/SkillLogoGrid';
 
 const Skills = () => {
     const [skills, setSkills] = useState([])
@@ -22,7 +23,7 @@ const Skills = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-extrabold text-black tracking-tight leading-none'>My area of expertise</motion.h1>
+                    className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-extrabold text-black tracking-tight leading-none text-center'>My area of expertise</motion.h1>
                 
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
@@ -31,7 +32,7 @@ const Skills = () => {
                         duration: 0.7,
                     }}
                     viewport={{ once: true }}
-                    className='max-w-2xl lg:max-w-5xl lg:w-3xl w-[90%]  mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl scrollFade'>People who wish to go into the future should have two skills to succeed – the ability to deal with people and the ability to sell. - Shiv Khera</motion.p>
+                    className='max-w-2xl lg:max-w-5xl lg:w-3xl w-[90%]  mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl text-center m-auto'>People who wish to go into the future should have two skills to succeed – the ability to deal with people and the ability to sell. - Shiv Khera</motion.p>
             </div>
             <motion.div
                 initial={{ opacity: 0, y: 100 }}
@@ -40,7 +41,8 @@ const Skills = () => {
                     duration: 0.9,
                 }}
                 viewport={{ once: true }} >
-                <SkillLogo></SkillLogo>
+                {/* <SkillLogo></SkillLogo> */}
+                <SkillLogoGrid></SkillLogoGrid>
             </motion.div>
             
             </div>
