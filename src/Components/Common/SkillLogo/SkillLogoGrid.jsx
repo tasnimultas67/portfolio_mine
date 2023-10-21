@@ -28,7 +28,6 @@ const SkillLogoGrid = () => {
                 <img className="skill-logo wordpress-g" src="https://seeklogo.com/images/W/wordpress-icon-logo-45667D3313-seeklogo.com.png" alt="" />
                 <img className="skill-logo shopify-g" src="https://seeklogo.com/images/S/shopify-logo-1C711BCDE4-seeklogo.com.png" alt="" />
                 <img className="skill-logo figma-g" src="https://seeklogo.com/images/F/figma-logo-E4E21D3AEA-seeklogo.com.png" alt="" />
-                <img className="skill-logo canva-g" src="https://seeklogo.com/images/C/canva-logo-C21344F8C5-seeklogo.com.png" alt="" />
             </motion.div>
         </div>
     );
