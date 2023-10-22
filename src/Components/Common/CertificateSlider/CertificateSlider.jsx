@@ -43,11 +43,11 @@ const CertificateSlider = () => {
     {
         certificates.map(certificate => (
             <SwiperSlide key={certificate._id} className='mb-16'>
-                <div className='  bg-white/10 backdrop-blur shadow-md lg:h-[30rem] mb-6 sm:mb-0 p-6 rounded-md  border-t border-[#ffffff0d] duration-300 highlight-white/5'>
+                <div className='  bg-themeColor backdrop-blur shadow-md lg:h-[30rem] mb-6 sm:mb-0 p-6 rounded-md  border-t border-[#ffffff0d] duration-300 highlight-white/5'>
                     {/* box content */}
                     <div className="">
                             <div className='h-14 w-14 rounded-md flex  items-center  mb-4'>
-                                <ShieldCheckIcon className="h-10 w-10 text-themeColor" />
+                                <ShieldCheckIcon className="h-10 w-10 text-white" />
                             </div>
                             <div>
                                 <h3 className="text-xl md:text-lg lg:text-lg xl:text-xl font-bold text-white mb-5">{certificate.name}</h3>
@@ -59,7 +59,7 @@ const CertificateSlider = () => {
                     </div>
                     {/* box button */}
                     <div className='absolute bottom-6 '>
-                                <Link to={certificate.certificateURL} className="w-[10rem] justify-center group group-* mt-14 flex items-center text-sm leading-6 text-black uppercase bg-themeColor px-6 py-3 ">Download <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span></Link>
+                                <Link to={certificate.certificateURL} className="w-fit justify-center group group-* mt-14 flex items-center text-sm leading-6 text-black uppercase bg-white px-6 py-3 rounded">Download <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span></Link>
                     </div>
                 </div>
             </SwiperSlide>))

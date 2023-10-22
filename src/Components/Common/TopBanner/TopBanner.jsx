@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function TopBanner({handleClickHidden}) {
   return (
-    <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-themeColor px-6 py-2.5 sm:px-3.5 sm:before:flex-1 z-[1000]">
+    <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-white px-6 py-2.5 sm:px-3.5 sm:before:flex-1 z-[1000]">
      
       <div className="md:flex flex-wrap items-center gap-x-4 gap-y-2 text-center md:text-left">
         <p className="text-sm leading-6 text-gray-900 flex items-center justify-center md:justify-start">

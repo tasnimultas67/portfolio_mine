@@ -8,7 +8,7 @@ const Experience = ({ experience }) => {
             
                 <div className="">
                     <div className='h-16 w-16 bg-themeColor border-gray-700 rounded-md flex justify-center items-center  mb-4 '>
-                        <BriefcaseIcon className="h-8 w-8 text-black" />
+                        <BriefcaseIcon className="h-8 w-8 text-white" />
                     </div>
                 <h3 className="text-2xl font-bold mb-5 text-black">{[position]}</h3>
                 <p className="block mb-5 text-lg font-semibold leading-4 text-gray-900">{ company}</p>

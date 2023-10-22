@@ -1,28 +1,26 @@
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
-}
+} */
 
-.rb-container {
+/* .rb-container {
     height: 100%;
-}
+} */
 
 .rb-container {
     align-items: center;
-    /* background: #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     /* overflow: hidden; */
-    perspective: 800px;
-    /* margin: auto; */
+    perspective: 300px; 
 }
 
-.container {
+/* .container {
     position: relative;
-}
+} */
 
 .rubiks-cube {
     animation: rubiks-cube 18s linear infinite;

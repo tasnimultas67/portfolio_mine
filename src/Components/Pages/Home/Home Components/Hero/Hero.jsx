@@ -47,7 +47,7 @@ export default function Hero() {
     }
 
     return (
-        <div className="bg-black text-white h-[100vh] flex items-center">
+        <div className="bg-themeColor text-white h-[100vh] flex items-center">
 
             <div className="mx-auto w-full md:w-10/12 lg:w-10/12 xl:w-10/12 px-5 py-32 sm:py-36 lg:py-36 ">
 
@@ -59,7 +59,7 @@ export default function Hero() {
                             duration: 0.5,
                         }}
                         viewport={{ once: true }}
-                        className="text-5xl lg:text-6xl md:text-6xl xl:text-7xl 2xl:text-7xl font-bold tracking-tight text-white  isolate scrollFade">
+                        className="text-5xl lg:text-6xl md:text-6xl xl:text-7xl 2xl:text-7xl font-bold tracking-tight text-white  isolate ">
                         {selectedQuote.quote}
                     </motion.h1>
                     <motion.p
@@ -69,8 +69,8 @@ export default function Hero() {
                             duration: 0.7,
                         }}
                         viewport={{ once: true }}
-                        className="mt-6 text-base md:text-lg md:leading-8 text-gray-100 scrollFade">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</motion.p>
-                    <div className="mt-5 scrollFade">
+                        className="mt-6 text-base md:text-lg md:leading-8 text-gray-100 ">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</motion.p>
+                    <div className="mt-5 ">
                         <motion.button
                             initial={{ opacity: 0, y: 100 }}
                             whileInView={{opacity: 1, y: 0}}
@@ -78,8 +78,8 @@ export default function Hero() {
                                 duration: 0.8,
                             }}
                             viewport={{ once: true }}
-                            onClick={getQuote} className="w-[11rem] m-auto group text-sm flex items-center justify-center leading-6 text-themeColor">
-                            Try New Qoutes <span aria-hidden="true"><ArrowRightIcon className="h-5 w-5 relative text-themeColor ml-1 group-hover:-mr-2 group-hover:ml-3"/></span>
+                            onClick={getQuote} className="w-[11rem] m-auto group text-sm flex items-center justify-center leading-6 text-white">
+                            Try New Qoutes <span aria-hidden="true"><ArrowRightIcon className="h-5 w-5 relative text-white ml-1 group-hover:-mr-2 group-hover:ml-3"/></span>
                         </motion.button>
                     </div>
                 </div>

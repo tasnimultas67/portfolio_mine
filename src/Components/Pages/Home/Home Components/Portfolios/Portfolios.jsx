@@ -24,7 +24,7 @@ const Portfolios = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none'>I collaborated with pioneering leaders to create exceptional products</motion.h1>
+                    className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-white tracking-tight leading-none'>I collaborated with pioneering leaders to create exceptional products</motion.h1>
                 
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
@@ -33,7 +33,7 @@ const Portfolios = () => {
                         duration: 0.7,
                     }}
                     viewport={{ once: true }}
-                    className='max-w-2xl lg:max-w-5xl lg:w-5xl  mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl scrollFade'>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.” - Steve Jobs</motion.p>
+                    className='max-w-2xl lg:max-w-5xl lg:w-5xl  mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl scrollFade'>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.” - Steve Jobs</motion.p>
 
                 <motion.div
                         initial={{ opacity: 0, y: 100 }}
@@ -42,7 +42,7 @@ const Portfolios = () => {
                             duration: 0.9,
                         }}
                         viewport={{ once: true }}>
-                    <Link to="/portfolio" className="w-fit justify-center group group-* md:mt-10 flex items-center text-sm relative leading-6 text-black uppercase bg-white px-8 py-3 cursor-pointer">
+                    <Link to="/portfolio" className="w-fit justify-center group group-* md:mt-10 flex items-center text-sm relative leading-6 text-black uppercase bg-white px-8 py-3 cursor-pointer rounded">
                         See More <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
                     </Link>
                 </motion.div>

@@ -6,9 +6,9 @@ import 'swiper/css';
 export default function ClientLogo() {
   return (
       <>
-          <div className='bg-white pt-28'>
+          <div className='bg-white'>
               
-              <h2 className='text-center mb-8'>Trusted Clients</h2>
+              {/* <h2 className='text-center mb-8'>Trusted Clients</h2> */}
 
 
               <Swiper

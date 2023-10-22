@@ -53,8 +53,8 @@ const Header = () => {
       <>
       {!isHidden && <TopBanner handleClickHidden={handleClickHidden}></TopBanner>}
       <div className="sticky top-0 z-[1000] bg-white" onScroll={changeNavBg}>
-      <header className={`${classAbsolute} inset-x-0 top-0 z-50`}>
-        <nav className={`flex items-center justify-between px-6 py-3 lg:px-8 ${navBg ? 'backdrop-blur bg-black/20' : 'bg-black'}`} aria-label="Global">
+      <header className={`${classAbsolute} inset-x-0 top-0 z-50 `}>
+        <nav className={`flex items-center justify-between px-6 py-3 lg:px-8 ${navBg ? 'backdrop-blur bg-black/20' : 'bg-themeColor'}`} aria-label="Global">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Tasnimul Haque</span>
@@ -87,9 +87,9 @@ const Header = () => {
               </NavLink>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end  relative">
-            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-black uppercase bg-themeColor px-5 py-1 group group-*" download>
-              Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end relative">
+            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-themeColor uppercase bg-white px-5 py-1 group group-* w-fit rounded" download>
+              Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-themeColor ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
               </a>
               {
               user && <Menu as="div" className="relative ml-3">
@@ -157,7 +157,7 @@ const Header = () => {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-[1000] w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link to="/"  className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Tasnimul Haque</span>
                 <img
                   className="h-10 w-auto"
                   src={Logo}
@@ -166,7 +166,7 @@ const Header = () => {
               </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-themeColor"
+                className="-m-2.5 rounded-md p-2.5 text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -193,7 +193,7 @@ const Header = () => {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-themeColor"
                   >
                     Resume
                   </a>

@@ -6,7 +6,7 @@ const WhyChoose = () => {
     return (
         <>
             <div
-                className="bg-themeColor py-48">
+                className="bg-themeColor py-48 text-white">
                 <div className="w-11/12 m-auto md:flex md:justify-between">
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}

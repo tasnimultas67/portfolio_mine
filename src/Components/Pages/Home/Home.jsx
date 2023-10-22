@@ -19,7 +19,9 @@ const Home = () => {
             <Experiences ></Experiences>
             <Skills/>
             <Portfolios />
-            <ClientLogo></ClientLogo>
+            <div className='pt-24'>
+                <ClientLogo></ClientLogo>
+            </div>
             <ContactMeBanner />
 
         </div>

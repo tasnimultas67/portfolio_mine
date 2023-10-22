@@ -24,7 +24,7 @@ const Footer = () => {
     return (
         
         <>
-            <div className='bg-deepBlue' >
+            <div className='bg-themeColor' >
                 <div className='w-11/12 m-auto'>
                     <div className='py-24 flex flex-col gap-y-10'>
                     <h2 className='text-white text-xl md:text-2xl '>HAVE A NICE WORKS? LET’S TALK WITH ME</h2>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className='text-gray-300 text-4xl md:text-7xl lg:text-8xl xl:text-8xl font-extrabold block md:flex lg:flex xl:flex 2xl:flex items-center'>
                         <h2>hello</h2>
                         <Link className='text-white flex items-center group-* group ml-0 md:ml-3 lg:ml-3 xl:ml-3 2xl:ml-3' to="mailto:tasnimul.haque6@gmail.com">@tasnimul.com
-                            <ArrowUpRightIcon className=' h-10 w-10 p-3 md:h-20 md:w-20 md:p-5  bg-gray-800 rounded-full ml-3 group-hover:rotate-45 transition ease-in-out delay-150 group-hover:text-themeColor'></ArrowUpRightIcon>
+                            <ArrowUpRightIcon className=' h-10 w-10 p-3 md:h-20 md:w-20 md:p-5  bg-blue-900 rounded-full ml-3 group-hover:rotate-45 transition ease-in-out delay-150 group-hover:text-white'></ArrowUpRightIcon>
                         </Link>
                     </div>
 
@@ -99,7 +99,7 @@ const Footer = () => {
                         <Link className='buyMeCoffee bg-themeColor' target="_blank" to="https://www.buymeacoffee.com/tasnimulhaque" rel="noreferrer">
                             <img  className=' bg-themeColor m-auto mb-5 md:mb-0' src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=tasnimulhaque&button_colour=FFFF00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
                         </Link>
-                        <p className='text-gray-400 text-center md:text-start'>©{copyWriteYear} All Rights Reserved. Designed with 🤍</p>
+                        <p className='text-gray-200 text-center md:text-start font-normal'>©{copyWriteYear} All Rights Reserved. Designed with 🤍</p>
                     </div>
                 </div>
             </div>
