@@ -23,7 +23,7 @@ const Skills = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-extrabold text-black tracking-tight leading-none text-center'>My area of expertise</motion.h1>
+                    className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none text-center'>My area of expertise</motion.h1>
                 
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
@@ -40,7 +40,8 @@ const Skills = () => {
                 transition={{
                     duration: 0.9,
                 }}
-                viewport={{ once: true }} >
+                viewport={{ once: true }}
+            className='pb-16'>
                 {/* <SkillLogo></SkillLogo> */}
                 <SkillLogoGrid></SkillLogoGrid>
             </motion.div>

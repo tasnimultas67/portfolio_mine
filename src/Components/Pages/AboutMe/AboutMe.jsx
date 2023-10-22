@@ -99,7 +99,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 {/* Certificates */}
-                <div className='py-28 w-full bg-transparent m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 justify-center'>
+                <div className='py-28 w-full bg-transparent m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 justify-center bg-deepBlue'>
                     <CertificateSlider/>
                 </div>
              </div>

@@ -1,13 +1,12 @@
-/* *,
+*,
 *::before,
 *::after {
     box-sizing: border-box;
-} */
+}
 
-/* html,
-body {
+.rb-container {
     height: 100%;
-} */
+}
 
 .rb-container {
     align-items: center;
@@ -17,7 +16,8 @@ body {
     justify-content: center;
     margin: 0;
     /* overflow: hidden; */
-    /* perspective: 800px; */
+    perspective: 800px;
+    /* margin: auto; */
 }
 
 .container {

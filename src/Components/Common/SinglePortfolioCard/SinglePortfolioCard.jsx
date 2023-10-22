@@ -16,7 +16,7 @@ const SinglePortfolioCard = ({ portfolio }) => {
                     duration: 0.5,
                 }}
                 viewport={{ once: true }}
-                className="relative flex-col items-end justify-center overflow-hidden rounded-sm text-left scrollFade border border-black/20 hover:border-black cursor-pointer">
+                className="relative flex-col items-end justify-center overflow-hidden rounded-sm text-left scrollFade border border-black/20 hover:border-black cursor-pointer ">
 
                 <div className="relative p-6  px-6 md:px-6">
                     <img src={portfolioImgLink} loading='lazy' className="border border-black/10 mb-4 h-[11rem] w-full object-cover" alt="Portfolio Image" />
