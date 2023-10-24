@@ -33,8 +33,8 @@ export default function About() {
 
     
     return (
-        <div className="overflow-hidden  pt-40 pb-44 bg-white isolate z-50">
-            <div className="w-11/12 m-auto">
+        <div className="overflow-hidden  md:py-40 py-28 bg-white isolate z-50">
+            <div className="w-11/12 m-auto text-center sm:text-left">
                 <motion.div
                 initial={{ opacity: 0, y: 100 }}
                         whileInView={{opacity: 1, y: 0}}
@@ -45,13 +45,13 @@ export default function About() {
                     className=''>
                     <h1
                     
-                        className=" mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none">A visual designer focused on creating emotional digital experience</h1>
-                    <Link to="/about" className="w-fit justify-center group group-* md:mt-14 flex items-center text-sm relative leading-6 text-white uppercase bg-themeColor px-8 py-3 rounded">
+                        className=" mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-[4.3rem] 2xl:text-7xl font-bold text-black tracking-tight leading-none ">A visual designer focused on creating emotional digital experience</h1>
+                    <Link to="/about" className="w-fit m-auto sm:m-0 justify-center group group-* md:mt-14 flex items-center text-sm relative leading-6 text-white uppercase bg-themeColor px-8 py-3 rounded">
                         Know More <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-white ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
                         </Link>
                 </motion.div>
                
-                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 mt-12">
+                <div className="mx-auto grid  grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 mt-12">
                     <motion.div
                     
                         initial={{ opacity: 0, y: 100 }}
@@ -60,11 +60,11 @@ export default function About() {
                             duration: 0.7,
                         }}
                         viewport={{once: true}}
-                        className="lg:pr-8  flex ">
+                        className="lg:pr-8">
                         <div className="">
-                            <p className="scrollFade text-xl sm:text-2xl md:text2xl xl:text-2xl lg:text-2xl 2xl:text-[1.6rem] leading- text-gray-950 Roobert-font">Hello, I am Tasnimul Haque! I'm a {age}-year-old Web Developer and student based in Dhaka, Bangladesh. I completed a Higher Secondary Certificate degree from Bhola Govt College in 2021. Now I am doing BSS(Hons) in the Political Science department.</p>
+                            <p className=" text-xl sm:text-2xl md:text-2xl xl:text-2xl lg:text-2xl 2xl:text-[1.6rem] leading- text-gray-950 ">Hello, I am Tasnimul Haque! I'm a {age}-year-old Web Developer and student based in Dhaka, Bangladesh. I completed a Higher Secondary Certificate degree from Bhola Govt College in 2021. Now I am doing BSS(Hons) in the Political Science department.</p>
 
-                            <p className="scrollFade mt-6 text-xl sm:text-2xl md:text2xl xl:text-2xl lg:text-2xl 2xl:text-[1.6rem] leading-8 text-gray-950 Roobert-font">Since the internet was introduced to me at an early age, I always aspired to use the internet to benefit myself or other people. I realised that the internet is a powerful tool capable of solving any problem. Whenever using the internet I always find myself analysing the design and functionality of websites - how they could be improved, what makes them successful.</p>
+                            <p className=" mt-6 text-xl sm:text-2xl md:text2xl xl:text-2xl lg:text-2xl 2xl:text-[1.6rem] leading-8 text-gray-950 ">Since the internet was introduced to me at an early age, I always aspired to use the internet to benefit myself or other people. I realised that the internet is a powerful tool capable of solving any problem. Whenever using the internet I always find myself analysing the design and functionality of websites - how they could be improved, what makes them successful.</p>
                             <img className='md:w-[10rem] lg:w-[11rem] xl:w-[11rem] w-[9rem] mt-2 mb-5' src={signature} alt="Tasnimul Signature" />
                         </div>
                     </motion.div>
@@ -80,7 +80,7 @@ export default function About() {
                             src={Tasnimul}
                             alt="Tasnimul Haque Image"
                             loading='lazy'
-                            className="w-full sm:w-[38rem] md:w-[38rem] lg:w-[40rem] xl:w-[40rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 isolate scrollFade"
+                            className="w-full  sm:w-full md:w-full lg:w-[40rem] xl:w-[40rem] rounded-xl shadow-xl ring-1 ring-gray-400/10  lg:-ml-0  "
                         />
                         {/* <div className="relative grid h-[40rem] w-full sm:w-[38rem] md:w-[38rem] lg:w-[40rem] xl:w-[40rem] flex-col items-end overflow-hidden rounded-xl bg-white bg-clip-border ">
                             <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://i.ibb.co/xqzMcfq/Tasnimul-Haque.jpg')] bg-cover bg-clip-border bg-center">

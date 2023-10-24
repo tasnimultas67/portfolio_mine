@@ -21,8 +21,8 @@ const Home = () => {
             <Process></Process>
             <Skills/>
             <Portfolios />
-            <div className='py-48'>
-                <h1 className='mb-20 text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold max-w-4xl m-auto text-black tracking-tight leading-none text-center'>Trusted by thousands of successful startups worldwide</h1>
+            <div className='py-28 md:py-48'>
+                <h1 className='mb-20 w-11/12  text-4xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold md:max-w-4xl m-auto text-black tracking-tight leading-none text-center'>Trusted by thousands of successful startups worldwide</h1>
                 <ClientLogo></ClientLogo>
             </div>
             {/* <ContactMeBanner /> */}

@@ -81,7 +81,7 @@ export default function Hero() {
                     }}
                     viewport={{ once: true }}
                     className="mt-5 block md:flex justify-center items-center gap-5">
-                        <Link to="/contact" className='text-base m-auto md:m-0 w-fit flex items-center justify-center bg-white text-black py-3 px-5 rounded-md font-bold hover:bg-yellowAc '>Start Project <MinusIcon className=' w-5 mx-1'></MinusIcon>Contact <ArrowLongRightIcon className='w-5 ml-1'></ArrowLongRightIcon></Link>
+                        <Link to="/contact" className='text-base m-auto md:m-0 w-fit flex items-center justify-center bg-white text-black py-3 px-5 rounded-md font-bold hover:bg-yellowAc mb-5 md:mb-0'>Start Project <MinusIcon className=' w-5 mx-1'></MinusIcon>Contact <ArrowLongRightIcon className='w-5 ml-1'></ArrowLongRightIcon></Link>
 
                         <button
                             onClick={getQuote} className="w-fit group font-semibold flex items-center justify-center leading-6 text-yellowAc m-auto md:m-0">

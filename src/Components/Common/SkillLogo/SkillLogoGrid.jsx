@@ -11,7 +11,7 @@ const SkillLogoGrid = () => {
                     duration: 0.5,
                 }}
                 viewport={{ once: true }}
-                className="grid grid-cols-2 md:grid-cols-6 gap-20 align-middle items-center">
+                className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-20 align-middle items-center">
                 <img className="skill-logo html-g" src="https://cdn.iconscout.com/icon/free/png-256/html5-40-1175193.png" alt="" />
                 <img className="skill-logo css-g" src="https://cdn.iconscout.com/icon/free/png-512/css-118-569410.png" alt="" />
                 <img className="skill-logo javascript-g" src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-3521515-2945018.png" alt="" />

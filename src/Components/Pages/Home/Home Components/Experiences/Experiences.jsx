@@ -14,7 +14,7 @@ const Experiences = () => {
     }, [])
 
     return (
-        <div className='w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 py-36 bg-white'>
+        <div className=' m-auto w-11/12 py-36 bg-white text-center sm:text-left'>
             <div>
                 <motion.h1
                     initial={{ opacity: 0, y: 100 }}
@@ -23,7 +23,7 @@ const Experiences = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none text-center'>Employment <span className='text-themeColor'>Background</span></motion.h1>
+                    className='mb-4 text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none text-center'>Employment <span className='text-themeColor'>Background</span></motion.h1>
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{opacity: 1, y: 0}}
@@ -40,7 +40,7 @@ const Experiences = () => {
                     duration: 0.9,
                 }}
                 viewport={{ once: true }}
-                className='md:flex gap-5 md:mt-10'>
+                className='lg:flex gap-5 md:mt-10'>
                 {
                 experiences.map(experience => <Experience key={experience._id} experience={experience } />)
                  }

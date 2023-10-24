@@ -25,7 +25,7 @@ const CertificateSlider = () => {
       slidesPerView={1}
       breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
@@ -42,8 +42,8 @@ const CertificateSlider = () => {
         >
     {
         certificates.map(certificate => (
-            <SwiperSlide key={certificate._id} className='mb-16'>
-                <div className='  bg-themeColor backdrop-blur shadow-md lg:h-[30rem] mb-6 sm:mb-0 p-6 rounded-md  border-t border-[#ffffff0d] duration-300 highlight-white/5'>
+            <SwiperSlide key={certificate._id} className='md:mb-16 mb-10'>
+                <div className='  bg-themeColor backdrop-blur shadow-md h-[27rem] md:h-[30rem] lg:h-[30rem] mb-6 sm:mb-0 p-6 rounded-md  border-t border-[#ffffff0d] duration-300 highlight-white/5'>
                     {/* box content */}
                     <div className="">
                             <div className='h-14 w-14 rounded-md flex  items-center  mb-4'>

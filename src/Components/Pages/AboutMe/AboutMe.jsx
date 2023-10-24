@@ -40,7 +40,7 @@ const AboutMe = () => {
                                 }}
                                     viewport={{ once: true }}
                                 
-                                className='text-center text-3xl md:text-7xl font-extrabold '>Not a dev, designer and most certainly not a role model. Just a stray cat trying to survive.
+                                className='text-center text-4xl md:text-6xl lg:text-7xl font-extrabold '>Not a dev, designer and most certainly not a role model. Just a stray cat trying to survive.
                             </motion.h1>
                         </div>
                         {/* Image */}
@@ -53,7 +53,7 @@ const AboutMe = () => {
                                     viewport={{ once: true }}
                             className='m-auto mt-28 shadow-xl h-80 md:h-[100%]  md:max-h-none w-full object-cover rounded ' loading='lazy' src={tasnimulAboutBanner} alt="Tasnimul Image" srcSet="" />
                         {/* Details about me */}
-                        <div className=" m-auto md:px-20 px-10 md:py-10 py-5 mt-10 text-xl bg-[#F9FAFB] rounded-xl container">
+                        <div className=" m-auto text-center sm:text-left md:py-10 py-5 mt-10 text-xl">
                                     
                             <motion.p
                                 initial={{ opacity: 0, y: 100 }}

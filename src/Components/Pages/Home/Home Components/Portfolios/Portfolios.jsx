@@ -15,8 +15,8 @@ const Portfolios = () => {
     },[])
     
     return (
-            <div className='w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 py-40 bg-themeColor'>
-            <div className=''>
+            <div className='py-28 md:py-40 bg-themeColor'>
+            <div className='w-11/12 m-auto text-center sm:text-left'>
 
                 <motion.h1
                     initial={{ opacity: 0, y: 100 }}
@@ -25,7 +25,7 @@ const Portfolios = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-white tracking-tight leading-none'>I collaborated with pioneering leaders to create exceptional products</motion.h1>
+                    className='mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-white tracking-tight leading-none'>I collaborated with pioneering leaders to create exceptional products</motion.h1>
                 
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
@@ -43,18 +43,19 @@ const Portfolios = () => {
                             duration: 0.9,
                         }}
                         viewport={{ once: true }}>
-                    <Link to="/portfolio" className="w-fit justify-center group group-* md:mt-10 flex items-center text-sm relative leading-6 text-black uppercase bg-white px-8 py-3 cursor-pointer rounded">
+                    <Link to="/portfolio" className="w-fit m-auto sm:m-0 justify-center group group-* md:mt-10 flex items-center text-sm relative leading-6 text-black uppercase bg-white px-8 py-3 cursor-pointer rounded">
                         See More <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-black ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
                     </Link>
                 </motion.div>
-                </div>
-                <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 pt-10'>
+                
+                <div className='grid grid-cols-1 md:grid-cols-2 xl :grid-cols-3 gap-10 pt-10'>
                     {
                         portfolios.slice(0, 3).map(portfolio => <SinglePortfolioCard key={portfolio._id} portfolio={portfolio}/>)
                     }
+                </div>
             </div>
 
-            </div>
+        </div>
     );
 };
 
