@@ -25,7 +25,7 @@ const Portfolios = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-white tracking-tight leading-none'>I collaborated with pioneering leaders to create exceptional products</motion.h1>
+                    className='mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-[4.2rem] 2xl:text-7xl font-bold text-white tracking-tight leading-none'>I collaborated with pioneering leaders to create exceptional products</motion.h1>
                 
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
@@ -48,7 +48,7 @@ const Portfolios = () => {
                     </Link>
                 </motion.div>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 xl :grid-cols-3 gap-10 pt-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-10 pt-10'>
                     {
                         portfolios.slice(0, 3).map(portfolio => <SinglePortfolioCard key={portfolio._id} portfolio={portfolio}/>)
                     }

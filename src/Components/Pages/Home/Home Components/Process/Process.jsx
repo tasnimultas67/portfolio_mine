@@ -1,4 +1,5 @@
 import crown from '../../../../../assets/img1.png'
+import {motion} from 'framer-motion'
 
 const Process = () => {
     const p1 = "https://i.ibb.co/VpGdyP7/box.png";
@@ -12,8 +13,22 @@ const Process = () => {
             <div className=" bg-yellowAc py-28 md:py-40">
                 <div className="w-11/12 m-auto relative">
                     <img src={crown} alt="" srcSet="" className='hidden md:block absolute left-5 xl:left-52 -top-16' />
-                    <h1 className="mb-4 text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black m-auto text-center max-w-3xl">Merging your vision with my <span className="text-themeColor">design</span></h1>
-                    <div className="mt-28 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{
+                            duration: 0.5,
+                        }}
+                        viewport={{ once: true }}
+                        className="mb-4 text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black m-auto text-center max-w-3xl">Merging your vision with my <span className="text-themeColor">design</span></motion.h1>
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{
+                            duration: 0.7,
+                        }}
+                        viewport={{ once: true }}
+                        className="mt-28 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
                         <div className="text-center md:text-left">
                             <img src={p1} className="h-20 w-20 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
                             <h1 className="text-2xl font-bold py-4 text-center md:text-left">Discovery</h1>
@@ -34,7 +49,7 @@ const Process = () => {
                             <h1 className="text-2xl font-bold py-4">Launch</h1>
                             <p>Once you’re happy with the designs, I will proceed to building them making sure everything is optimised to follow modern web practices, such as speed, security and reliability.</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>
