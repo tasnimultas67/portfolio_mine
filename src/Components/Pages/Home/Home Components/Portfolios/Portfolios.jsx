@@ -15,8 +15,9 @@ const Portfolios = () => {
     },[])
     
     return (
-            <div className='w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 py-36 bg-themeColor'>
-                <div className=''>
+            <div className='w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 py-40 bg-themeColor'>
+            <div className=''>
+
                 <motion.h1
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{opacity: 1, y: 0}}
@@ -33,7 +34,7 @@ const Portfolios = () => {
                         duration: 0.7,
                     }}
                     viewport={{ once: true }}
-                    className='max-w-2xl lg:max-w-5xl lg:w-5xl  mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl scrollFade'>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.” - Steve Jobs</motion.p>
+                    className='max-w-2xl lg:max-w-5xl lg:w-5xl  mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl scrollFade'>This section serves as a visual representation of my professional trajectory and the significant milestones I’ve achieved</motion.p>
 
                 <motion.div
                         initial={{ opacity: 0, y: 100 }}

@@ -34,7 +34,7 @@ export default function About() {
     
     return (
         <div className="overflow-hidden  pt-40 pb-44 bg-white isolate z-50">
-            <div className="w-full m-auto px-5 sm:px-7 md:px-10 lg:px-16 xl:px-16 justify-center">
+            <div className="w-11/12 m-auto">
                 <motion.div
                 initial={{ opacity: 0, y: 100 }}
                         whileInView={{opacity: 1, y: 0}}
@@ -69,6 +69,7 @@ export default function About() {
                         </div>
                     </motion.div>
                     <div className=' -mt-16 '>
+                        
                         <motion.img
                             initial={{ opacity: 0, y: 100 }}
                             whileInView={{opacity: 1, y: 0}}
@@ -81,12 +82,22 @@ export default function About() {
                             loading='lazy'
                             className="w-full sm:w-[38rem] md:w-[38rem] lg:w-[40rem] xl:w-[40rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 isolate scrollFade"
                         />
-                        
+                        {/* <div className="relative grid h-[40rem] w-full sm:w-[38rem] md:w-[38rem] lg:w-[40rem] xl:w-[40rem] flex-col items-end overflow-hidden rounded-xl bg-white bg-clip-border ">
+                            <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://i.ibb.co/xqzMcfq/Tasnimul-Haque.jpg')] bg-cover bg-clip-border bg-center">
+                                <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/10"></div>
+                            </div>
+                            <div className="relative p-1 px-6 py-3">
+                                <h2 className="mb-2 text-4xl font-semibold text-white antialiased">
+                                Tasnimul Haque
+                                </h2>
+                            </div>
+                        </div> */}
                             
                     </div>
-                    
                 </div>
             </div>
         </div>
     )
 }
+
+
