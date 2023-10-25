@@ -13,7 +13,7 @@ import Process from './Home Components/Process/Process';
 
 const Home = () => {
     return (
-        <div className='home'>
+        <div className='home relative top-0 left-0'>
 
             <Hero></Hero>
             <About></About>

@@ -1,13 +1,6 @@
-.clientLogo .swiper-wrapper {
-    transition-timing-function: linear !important;
-}
 
-.clientLogo .swiper-wrapper {
-    display: flex;
-    align-items: center;
-}
 
-.clientLogo .swiper-wrapper img {
+.marquee-logo img {
     margin: auto;
     width: 130px;
 }

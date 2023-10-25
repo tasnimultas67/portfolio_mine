@@ -33,7 +33,7 @@ export default function About() {
 
     
     return (
-        <div className="overflow-hidden  md:py-40 py-28 bg-white isolate z-50">
+        <div className=" md:py-40  py-28 bg-white">
             <div className="w-11/12 m-auto text-center sm:text-left">
                 <motion.div
                 initial={{ opacity: 0, y: 100 }}

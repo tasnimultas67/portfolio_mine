@@ -37,7 +37,7 @@ const Footer = () => {
                     </div>
 
                     </div>
-                    <hr className='border-gray-800'/>
+                    <hr className='border-gray-400'/>
                     <div className='py-12'>
                         <div className='lg:flex justify-between items-center'>
                             <div className='flex gap-5 justify-center md:justify-start'>

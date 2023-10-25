@@ -1,7 +1,11 @@
 import crown from '../../../../../assets/img1.png'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import './Process.css'
+import arrow2 from '../../../../../assets/arrow2.svg'
+import Marquee from 'react-fast-marquee';
 
 const Process = () => {
+ 
     const p1 = "https://i.ibb.co/VpGdyP7/box.png";
     const p2 = "https://i.ibb.co/vwV9G1M/curve.png";
     const p3 = "https://i.ibb.co/vmSCBV4/build.png";
@@ -51,8 +55,10 @@ const Process = () => {
                         </div>
                     </motion.div>
                 </div>
-
             </div>
+            <Marquee speed={50} gradient={false} pauseOnHover={false} className='bg-themeColor marquee-text font-semibold py-4 text-white'>
+                <h2>WEB DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /> <h2>WORDPRESS DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /><h2>SHOPIFY DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2 ' /><h2>WORDPRESS CUSTOMIZATION</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /> <h2>shopify CUSTOMIZATION</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' />
+    </Marquee>
         </>
     );
 };
