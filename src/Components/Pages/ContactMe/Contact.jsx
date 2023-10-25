@@ -1,4 +1,6 @@
 import { motion } from "framer-motion"
+// import FbMessageUs from "../../Common/Facebook/fbMessageUs";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 export default function Contact() {
 
@@ -27,6 +29,7 @@ export default function Contact() {
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(error => console.log(error));
+      form.reset()
   }
 
   return (
@@ -42,7 +45,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="pt-16">
               <h2 className="mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black tracking-tight leading-none text-center">Feel free to get in touch</h2>
-              <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">If you have any questions, suggestions, or simply want to share your experience with me, don’t hesitate. Reach out to me anytime. I'm here to listen and respond. Your feedback helps me grow and improve. So, feel free to get in touch!</p>
+              <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl md:max-w-4xl m-auto">If you have any questions, suggestions, or simply want to share your experience with me, don’t hesitate. Reach out to me anytime. I'm here to listen and respond. Your feedback helps me grow and improve. So, feel free to get in touch!</p>
           </motion.div>
           <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -73,8 +76,11 @@ export default function Contact() {
                 <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white bg-themeColor sm:w-fit hover:bg-black focus:ring-4 focus:outline-none focus:ring-themeColor rounded">Send message</button>
             </form>
           </motion.div>
-            
         </div>
+        <MessengerCustomerChat
+          pageId={import.meta.env.VITE_FACEBOOK_PAGE_ID}
+          appId={import.meta.env.VITE_FACEBOOK_APP_ID}
+        />
       </section>
 
     </>

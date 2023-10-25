@@ -18,7 +18,7 @@ const Portfolio = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none'>Helping brands to simplify their digital experiences.</motion.h1>
+                    className='mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none text-center md:max-w-4xl m-auto'>Helping brands to simplify their digital experiences.</motion.h1>
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{opacity: 1, y: 0}}
@@ -26,7 +26,7 @@ const Portfolio = () => {
                         duration: 0.7,
                     }}
                     viewport={{ once: true }}
-                    className='max-w-2xl lg:max-w-5xl lg:w-5xl  mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl scrollFade'>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.” - Steve Jobs</motion.p>
+                    className='md:max-w-4xl m-auto text-center mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl scrollFade'>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.” - Steve Jobs</motion.p>
             </div>
             <div className='grid lg:grid-cols-2 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
                 {
