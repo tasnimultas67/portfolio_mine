@@ -70,7 +70,7 @@ export default function Hero() {
                             duration: 0.7,
                         }}
                         viewport={{ once: true }}
-                        className="mt-6 text-base md:text-lg md:leading-7 text-gray-100 ">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</motion.p>
+                        className="mt-6 text-base md:text-lg md:leading-7 text-gray-100 md:w-10/12 m-auto">Life is a beautiful journey that is meant to be embraced to the fullest every day. However, that doesn't mean you always wake up ready to seize the day, and sometimes need a reminder that life is a great gift.</motion.p>
                     
                 </div>
                 <motion.div
@@ -81,7 +81,7 @@ export default function Hero() {
                     }}
                     viewport={{ once: true }}
                     className="mt-5 block md:flex justify-center items-center gap-5">
-                        <Link to="/contact" className='text-base m-auto md:m-0 w-fit flex items-center justify-center bg-white text-black py-3 px-5 rounded-md font-bold hover:bg-yellowAc mb-5 md:mb-0'>Start Project <MinusIcon className=' w-5 mx-1'></MinusIcon>Contact <ArrowLongRightIcon className='w-5 ml-1'></ArrowLongRightIcon></Link>
+                        <Link to="/contact" className='text-base m-auto md:m-0 w-fit flex items-center justify-center bg-white text-black py-3 px-5 rounded-md font-bold hover:bg-yellowAc mb-5 md:mb-0'>Start Project <MinusIcon className=' w-5 mx-1'></MinusIcon>Contact</Link>
 
                         <button
                             onClick={getQuote} className="w-fit group font-semibold flex items-center justify-center leading-6 text-yellowAc m-auto md:m-0">

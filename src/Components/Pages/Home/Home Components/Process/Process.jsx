@@ -24,7 +24,7 @@ const Process = () => {
                             duration: 0.5,
                         }}
                         viewport={{ once: true }}
-                        className="mb-4 text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black m-auto text-center max-w-3xl">You’re 4 steps away from a <span className="text-themeColor">new website</span></motion.h1>
+                        className="mb-4 text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black m-auto text-center max-w-3xl">You’re 4 steps away from a new<span className="text-themeColor"> website</span></motion.h1>
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}
                         whileInView={{opacity: 1, y: 0}}
@@ -34,22 +34,22 @@ const Process = () => {
                         viewport={{ once: true }}
                         className="mt-28 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
                         <div className="text-center md:text-left">
-                            <img src={p1} className="h-20 w-20 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
+                            <img src={p1} className="h-16 w-16 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
                             <h1 className="text-2xl font-bold py-4 text-center md:text-left">Discovery</h1>
                             <p>This is the phase where I dive deep into your world and get to know you. Before I can properly design your high-performing website, I need to understand you, your pain-points, and your audience.</p>
                         </div>
                         <div className='text-center md:text-left'>
-                            <img src={p2} className="h-20 w-20 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
+                            <img src={p2} className="h-16 w-16 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
                             <h1 className="text-2xl font-bold py-4">Design</h1>
                             <p>This is the phase where I dive deep into your world and get to know you. Before I can properly design your high-performing website, I need to understand you, your pain-points, and your audience.</p>
                         </div>
                         <div className='text-center md:text-left'>
-                            <img src={p3} className="h-20 w-20 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
+                            <img src={p3} className="h-16 w-16 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
                             <h1 className="text-2xl font-bold py-4">Build</h1>
                             <p>Once you’re happy with the designs, I will proceed to building them making sure everything is optimised to follow modern web practices, such as speed, security and reliability.</p>
                         </div>
-                        <div className='text-center md:text-left '>
-                            <img src={p4} className="h-20 w-20 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
+                        <div className='text-center md:text-left md:pt-2'>
+                            <img src={p4} className="h-14 w-14 mb-4 m-auto md:m-0" alt="Process Icon" srcSet="" />
                             <h1 className="text-2xl font-bold py-4">Launch</h1>
                             <p>Once you’re happy with the designs, I will proceed to building them making sure everything is optimised to follow modern web practices, such as speed, security and reliability.</p>
                         </div>

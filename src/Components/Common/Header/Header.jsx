@@ -88,7 +88,7 @@ const Header = () => {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end relative">
-            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-themeColor uppercase bg-white px-5 py-1 group group-* w-fit rounded" download>
+            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-themeColor uppercase bg-white px-5 py-1 group group-* w-fit rounded font-semibold" download>
               Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-themeColor ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
               </a>
               {
