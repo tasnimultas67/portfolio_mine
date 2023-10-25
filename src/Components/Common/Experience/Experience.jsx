@@ -13,8 +13,8 @@ const Experience = ({ experience }) => {
                         <h3 className="text-2xl font-bold mb-5 text-black">{[position]}</h3>
                         <p className="block mb-5 text-lg font-semibold leading-4 text-gray-900">{ company}</p>
                             <div className='xl:flex x items-center justify-between'>
-                                <p className="pb-2 xl:pb-0 block mb-2 text-base font-normal leading-4  text-gray-900">Start: <span className='bg-themeColor/20 px-2 py-0.5 rounded-md'> {startDate}</span></p>
-                                <p className="pb-2 xl:pb-0 block mb-2 text-base font-normal leading-3 text-gray-900">End: <span className='bg-themeColor/20 px-2 py-0.5 rounded-md'>{ endDate}</span></p>    
+                                <p className="pb-2 xl:pb-0 block mb-2 text-base font-normal leading-4  text-gray-900">Start: <span className=''> {startDate}</span></p>
+                                <p className="pb-2 xl:pb-0 block mb-2 text-base font-normal leading-3 text-gray-900">End: <span className=''>{ endDate}</span></p>    
                             </div>
                         <p className="text-base font-normal text-gray-900">{description}</p>
                     </div>

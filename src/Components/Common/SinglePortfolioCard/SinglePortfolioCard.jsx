@@ -16,11 +16,11 @@ const SinglePortfolioCard = ({ portfolio }) => {
                     duration: 0.5,
                 }}
                 viewport={{ once: true }}
-                className="relative flex-col items-end justify-center overflow-hidden text-left border border-black/20 hover:border-black cursor-pointer bg-white rounded-md shadow-lg group/card">
+                className="relative flex-col items-end justify-center overflow-hidden text-left border hover:border-black cursor-pointer bg-white rounded-md shadow-lg group/card">
 
                 <div className="relative p-6  px-6 md:px-6 ">
                     <div className='border border-black/10 mb-4 h-[11rem] w-full object-cover rounded-md overflow-hidden'>
-                        <img src={portfolioImgLink} loading='lazy' className=" group-hover/card:scale-125 delay-200 duration-300 ease-in-out" alt="Portfolio Image" />
+                        <img src={portfolioImgLink} loading='lazy' className=" group-hover/card:scale-125 duration-300 ease-in-out" alt="Portfolio Image" />
                     </div>
                     <p className='bg-themeColor absolute top-[9.8rem] left-[2.5rem] px-2 py-0.5 inline-block text-sm rounded shadow-lg text-white'>{ portfolioCategory}</p>
                     <h2 className="mb-2 block font-sans text-2xl font-semibold text-black antialiased ">{portfolioTitle}</h2>

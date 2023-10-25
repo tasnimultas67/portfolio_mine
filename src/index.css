@@ -19,9 +19,9 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-body {
-  overflow-y: scroll;
-}
+/* body {
+  overflow-x: scroll;
+} */
 #bmc-wbtn svg path{
   fill: black;
 }

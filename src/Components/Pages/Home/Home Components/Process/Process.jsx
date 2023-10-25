@@ -24,7 +24,7 @@ const Process = () => {
                             duration: 0.5,
                         }}
                         viewport={{ once: true }}
-                        className="mb-4 text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black m-auto text-center max-w-3xl">Merging your vision with my <span className="text-themeColor">design</span></motion.h1>
+                        className="mb-4 text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black m-auto text-center max-w-3xl">You’re 4 steps away from a <span className="text-themeColor">new website</span></motion.h1>
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}
                         whileInView={{opacity: 1, y: 0}}

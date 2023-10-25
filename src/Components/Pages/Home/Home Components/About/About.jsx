@@ -80,7 +80,7 @@ export default function About() {
                             src={Tasnimul}
                             alt="Tasnimul Haque Image"
                             loading='lazy'
-                            className="w-full  sm:w-full md:w-full lg:w-[40rem] xl:w-[40rem] rounded-xl shadow-xl ring-1 ring-gray-400/10  lg:-ml-0  "
+                            className="w-full lg:w-[40rem] rounded-xl shadow-xl lg:-ml-0  "
                         />
                         {/* <div className="relative grid h-[40rem] w-full sm:w-[38rem] md:w-[38rem] lg:w-[40rem] xl:w-[40rem] flex-col items-end overflow-hidden rounded-xl bg-white bg-clip-border ">
                             <div className="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('https://i.ibb.co/xqzMcfq/Tasnimul-Haque.jpg')] bg-cover bg-clip-border bg-center">

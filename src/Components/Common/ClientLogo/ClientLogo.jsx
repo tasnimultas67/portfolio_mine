@@ -7,7 +7,7 @@ export default function ClientLogo() {
   return (
       <>
           <div className='bg-white'>
-        <Marquee speed={50} gradient={true} pauseOnHover={false} className=' marquee-logo font-semibold '>
+        <Marquee speed={50} gradient={true} pauseOnHover={false} className=' marquee-logo font-semibold grayscale '>
           <div className='flex gap-32 items-center justify-center m-auto'>
             <img className="dhakaStartup m-auto" src="https://i.ibb.co/SngBKn1/Dhaka-Startup.png" alt="Dhaka Startup" />
             <img className="theFundSociety" src="https://i.ibb.co/C9vXPg4/thefundsociety.png" alt="The Fund Society" />
