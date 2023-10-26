@@ -61,11 +61,11 @@ export default function About() {
                         }}
                         viewport={{once: true}}
                         className="lg:pr-8">
-                        <div className="">
+                        <div className="m-auto">
                             <p className=" text-xl sm:text-2xl md:text-2xl xl:text-2xl lg:text-2xl 2xl:text-[1.6rem] leading- text-gray-950 ">Hello, I am Tasnimul Haque! I'm a {age}-year-old Web Developer and student based in Dhaka, Bangladesh. I completed a Higher Secondary Certificate degree from Bhola Govt College in 2021. Now I am doing BSS(Hons) in the Political Science department.</p>
 
                             <p className=" mt-6 text-xl sm:text-2xl md:text2xl xl:text-2xl lg:text-2xl 2xl:text-[1.6rem] leading-8 text-gray-950 ">Since the internet was introduced to me at an early age, I always aspired to use the internet to benefit myself or other people. I realised that the internet is a powerful tool capable of solving any problem. Whenever using the internet I always find myself analysing the design and functionality of websites - how they could be improved, what makes them successful.</p>
-                            <img className='md:w-[10rem] lg:w-[11rem] xl:w-[11rem] w-[9rem] mt-2 mb-5' src={signature} alt="Tasnimul Signature" />
+                            <img className='w-[9rem] m-auto md:m-0 md:w-[10rem] lg:w-[11rem] mt-2 mb-5' src={signature} alt="Tasnimul Signature" />
                         </div>
                     </motion.div>
                     <div className=' -mt-16 '>

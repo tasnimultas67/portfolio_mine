@@ -44,7 +44,7 @@ export default function Contact() {
             }}
             viewport={{ once: true }}
             className="pt-16">
-              <h2 className="mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black tracking-tight leading-none text-center">Feel free to get in touch</h2>
+              <h2 className="mb-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-black tracking-tight leading-none text-center">Feel free to get in touch</h2>
               <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl md:max-w-4xl m-auto">If you have any questions, suggestions, or simply want to share your experience with me, don’t hesitate. Reach out to me anytime. I'm here to listen and respond. Your feedback helps me grow and improve. So, feel free to get in touch!</p>
           </motion.div>
           <motion.div

@@ -25,7 +25,7 @@ const Portfolios = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-5xl md:text-5xl lg:text-6xl xl:text-[4.2rem] 2xl:text-7xl font-bold text-white tracking-tight leading-none text-center m-auto'>A taste of what I can do for you</motion.h1>
+                    className='mb-4 text-4xl sm:text-5xl lg:text-6xl xl:text-[4.2rem] 2xl:text-7xl font-bold text-white tracking-tight leading-none text-center m-auto'>A taste of what I can do for you</motion.h1>
                 
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
