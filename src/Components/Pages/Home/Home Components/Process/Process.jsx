@@ -24,7 +24,7 @@ const Process = () => {
                             duration: 0.5,
                         }}
                         viewport={{ once: true }}
-                        className="mb-4 text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black m-auto text-center max-w-3xl">You’re 4 steps away from a new<span className="text-themeColor"> website</span></motion.h1>
+                        className="mb-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black m-auto text-center max-w-3xl">You’re 4 steps away from a new<span className="text-themeColor"> website</span></motion.h1>
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}
                         whileInView={{opacity: 1, y: 0}}
@@ -57,7 +57,7 @@ const Process = () => {
                 </div>
             </div>
             <Marquee speed={50} gradient={false} pauseOnHover={false} className='bg-themeColor marquee-text font-semibold py-4 text-white'>
-                <h2>WEB DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /> <h2>WORDPRESS DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /><h2>SHOPIFY DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2 ' /><h2>WORDPRESS CUSTOMIZATION</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /> <h2>shopify CUSTOMIZATION</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' />
+                <h2 className='uppercase text-2xl '>WEB DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /> <h2 className='uppercase text-2xl '>WORDPRESS DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /><h2 className='uppercase text-2xl '>SHOPIFY DEVELOPMENT</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2 ' /><h2 className='uppercase text-2xl '>WORDPRESS CUSTOMIZATION</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' /> <h2 className='uppercase text-2xl '>shopify CUSTOMIZATION</h2> <img src={arrow2} alt="" srcSet="" className='w-10 h-10 mx-2' />
     </Marquee>
         </>
     );

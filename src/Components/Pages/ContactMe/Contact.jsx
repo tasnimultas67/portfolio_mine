@@ -77,10 +77,12 @@ export default function Contact() {
             </form>
           </motion.div>
         </div>
-        <MessengerCustomerChat
+        <div className="fb-chat-widget">
+          <MessengerCustomerChat
           pageId={import.meta.env.VITE_FACEBOOK_PAGE_ID}
           appId={import.meta.env.VITE_FACEBOOK_APP_ID}
         />
+        </div>
       </section>
 
     </>

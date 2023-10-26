@@ -12,12 +12,19 @@
     min-height: 500px !important;
   }
 }
+.fb_reset iframe{
+  bottom: 93px !important;
+  right: 10px !important;
+}
 body::-webkit-scrollbar {
   display: none;
 }
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+body{
+  background-color: white!important;
 }
 /* body {
   overflow-x: scroll;

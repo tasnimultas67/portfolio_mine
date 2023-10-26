@@ -30,7 +30,7 @@ const Home = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-20 w-11/12  text-4xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold md:max-w-4xl m-auto text-black tracking-tight leading-none text-center'>Trusted by thousands of successful startups worldwide</motion.h1>
+                    className='mb-20 w-11/12  text-4xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-bold md:max-w-4xl 2xl:max-w-6xl m-auto text-black tracking-tight leading-none text-center'>Trusted by thousands of successful startups worldwide</motion.h1>
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{opacity: 1, y: 0}}
