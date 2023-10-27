@@ -8,7 +8,10 @@ function App() {
 
   return (
     <>
-    <ScrollRestoration />
+      <ScrollRestoration
+        getKey={(location, matches) => {
+        return location.pathname;
+      }}/>
       <Header></Header>
       <Outlet></Outlet>
       <Footer></Footer>
