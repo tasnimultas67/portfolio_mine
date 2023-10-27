@@ -24,7 +24,7 @@ const Skills = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-7xl font-bold text-black tracking-tight leading-none text-center'>My specialization field</motion.h1>
+                    className='mb-4 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[5.5rem] 2xl:mb-6 font-bold text-black tracking-tight leading-none text-center'>My specialization field</motion.h1>
                 
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
@@ -33,7 +33,7 @@ const Skills = () => {
                         duration: 0.7,
                     }}
                     viewport={{ once: true }}
-                    className='max-w-2xl lg:max-w-5xl lg:w-3xl  mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl text-center m-auto'>This section outlines my specific area of expertise, highlighting the skills and knowledge I’ve acquired over the years. It provides an overview of my proficiency and the unique capabilities I bring to my professional role.</motion.p>
+                    className='w-11/12 lg:w-7/12 2xl:text-2xl lg:w-3xl  mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl text-center m-auto'>This section outlines my specific area of expertise, highlighting the skills and knowledge I’ve acquired over the years. It provides an overview of my proficiency and the unique capabilities I bring to my professional role.</motion.p>
             </div>
             <motion.div
                 initial={{ opacity: 0, y: 100 }}

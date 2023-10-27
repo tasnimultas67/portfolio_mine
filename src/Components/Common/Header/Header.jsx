@@ -59,7 +59,7 @@ const Header = () => {
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Tasnimul Haque</span>
               <img
-                className="h-10 w-auto"
+                className="h-10 2xl:h-16 w-auto"
                 src={Logo}
                 alt="Tasnimul Haque Logo"
               />
@@ -82,14 +82,14 @@ const Header = () => {
                         return {
                           color: isActive ? "yellow" : "white",}
                 }}
-                key={item.name} to={item.href} className={`text-[0.7rem] hover:text-themeColor uppercase leading-6 text-white `}>
+                key={item.name} to={item.href} className={`text-[0.7rem] 2xl:text-[1.1rem] hover:text-themeColor uppercase leading-6 text-white `}>
                 {item.name}
               </NavLink>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end relative">
-            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] relative leading-6 text-themeColor uppercase bg-white px-5 py-1 group group-* w-fit rounded font-semibold" download>
-              Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 relative text-themeColor ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
+            <a href='../../../../public/Tasnimul Haque Resume.pdf' className="flex items-center text-[0.7rem] 2xl:text-base relative leading-6 text-themeColor uppercase bg-white px-5 2xl:px-8 2xl:py-2  py-1 group group-* w-fit rounded font-semibold" download>
+              Resume <span aria-hidden="true"><ArrowUpRightIcon className="h-5 w-5 2xl:h-6 2xl:w-6 relative text-themeColor ml-1 group-hover:-mt-2 group-hover:-mr-2 group-hover:ml-3"/></span>
               </a>
               {
               user && <Menu as="div" className="relative ml-3">

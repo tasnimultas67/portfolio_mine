@@ -25,7 +25,7 @@ const Portfolios = () => {
                         duration: 0.5,
                     }}
                     viewport={{ once: true }}
-                    className='mb-4 text-4xl sm:text-5xl lg:text-6xl xl:text-[4.2rem] 2xl:text-7xl font-bold text-white tracking-tight leading-none text-center m-auto'>A taste of what I can do for you</motion.h1>
+                    className='mb-4 text-4xl sm:text-5xl lg:text-6xl xl:text-[4.2rem] 2xl:text-[5.5rem] font-bold text-white tracking-tight leading-none text-center m-auto'>A taste of what I can do for you</motion.h1>
                 
                 <motion.p
                     initial={{ opacity: 0, y: 100 }}
@@ -34,7 +34,7 @@ const Portfolios = () => {
                         duration: 0.7,
                     }}
                     viewport={{ once: true }}
-                    className='max-w-2xl lg:w-5xl m-auto text-center mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl'>This section serves as a visual representation of my professional trajectory and the significant milestones I’ve achieved</motion.p>
+                    className='w-11/12 lg:w-7/12 2xl:text-2xl m-auto text-center mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl'>This section serves as a visual representation of my professional trajectory and the significant milestones I’ve achieved</motion.p>
 
                 
                 

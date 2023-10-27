@@ -42,7 +42,7 @@ const AboutMe = () => {
                                 }}
                                     viewport={{ once: true }}
                                 
-                                className='text-center md:text-left text-4xl md:text-6xl lg:text-7xl font-extrabold md:max-w-7xl'>Not a dev, designer and most certainly not a role model. <span className='text-themeColor'>Just a stray cat trying to survive.</span>
+                                className='text-center md:text-left text-4xl md:text-6xl lg:text-[4.2rem] 2xl:text-8xl font-extrabold w-full 2xl:w-10/12'>Not a dev, designer and most certainly not a role model. <span className='text-themeColor'>Just a stray cat trying to survive.</span>
                             </motion.h1>
                             <motion.p
                                 initial={{ opacity: 0, y: 100 }}
@@ -51,7 +51,7 @@ const AboutMe = () => {
                                     duration: 0.7,
                                 }}
                                 viewport={{ once: true }}
-                                className="text-xl text-center md:text-left mt-9 md:ml-[10vw] text-gray-900 md:w-7/12">Hello, I am Tasnimul Haque! I'm a {age}-year-old developer and student based in Dhaka, Bangladesh. I completed a Higher Secondary Certificate degree from Bhola Govt College in 2021. Now I am doing BSS(Hons) in the Political Science department.</motion.p>
+                                className="text-xl 2xl:text-[1.7rem] 2xl:leading-10 text-center md:text-left mt-9 md:ml-[10vw] text-gray-900 md:w-7/12">Hello, I am Tasnimul Haque! I'm a {age}-year-old developer and student based in Dhaka, Bangladesh. I completed a Higher Secondary Certificate degree from Bhola Govt College in 2021. Now I am doing BSS(Hons) in the Political Science department.</motion.p>
                         
                             <motion.p
                                 initial={{ opacity: 0, y: 100 }}
@@ -60,7 +60,7 @@ const AboutMe = () => {
                                     duration: 0.9,
                                 }}
                                 viewport={{ once: true }}
-                            className='flex items-center gap-3 text-xl mt-7 mb-7 md:mb-0 md:ml-[10vw] text-center md:text-left justify-center md:justify-start'>
+                            className='flex items-center gap-3 text-xl mt-7 mb-7 md:mb-0 md:ml-[10vw] text-center md:text-left justify-center md:justify-start 2xl:text-[1.7rem] 2xl:leading-10'>
                             
                                 <MapPinIcon className='h-6 w-6 fill-themeColor'></MapPinIcon>
                                 localhost:3000/</motion.p>
@@ -75,7 +75,7 @@ const AboutMe = () => {
                                     viewport={{ once: true }}
                             className='m-auto  shadow-xl h-80 md:h-[100%]  md:max-h-none w-full object-cover rounded-lg ' loading='lazy' src={tasnimulAboutBanner} alt="Tasnimul Image" srcSet="" />
                         {/* Details about me */}
-                        <div className=" m-auto md:m-0 text-center sm:text-left md:py-10 py-5 mt-10 text-xl md:w-8/12">
+                        <div className=" m-auto md:m-0 text-center sm:text-left md:py-10 py-5 mt-10 text-xl md:w-8/12 2xl:text-[1.7rem] 2xl:leading-10">
                                 <motion.p
                                 initial={{ opacity: 0, y: 100 }}
                                 whileInView={{opacity: 1, y: 0}}
@@ -102,9 +102,9 @@ const AboutMe = () => {
                                         duration: 0.5,
                                     }}
                                     viewport={{ once: true }}
-                                    className='text-4xl md:text-7xl text-center md:text-left font-bold text-black mb-7 md:mb-0'>I enjoy partnering with design-savvy experts.</motion.h1>
+                                    className='text-4xl md:text-6xl 2xl:text-8xl text-center md:text-left font-bold text-black mb-7 md:mb-0'>I enjoy partnering with design-savvy experts.</motion.h1>
                             </div>
-                            <div className='flex-1 text-center sm:text-left text-xl'>
+                            <div className='flex-1 text-center sm:text-left text-xl 2xl:text-[1.7rem] 2xl:leading-10'>
                                 <motion.p
                                 initial={{ opacity: 0, y: 100 }}
                                 whileInView={{opacity: 1, y: 0}}

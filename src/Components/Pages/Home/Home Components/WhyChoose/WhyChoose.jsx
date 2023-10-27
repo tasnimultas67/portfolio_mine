@@ -17,8 +17,8 @@ const WhyChoose = () => {
                         }}
                         viewport={{ once: true }}
                         className="lg:w-7/12 ">
-                        <h4 className="text-xl font-bold pb-4">WHY CHOOSE ME?</h4>
-                        <div  className="text-2xl gap-y-5 flex flex-col">
+                        <h4 className="text-xl 2xl:text-2xl font-bold pb-4">WHY CHOOSE ME?</h4>
+                        <div  className="text-2xl 2xl:text-3xl gap-y-5 flex flex-col">
                             <p>I work with startup companies and freelancers to create beautiful and creative websites, visual designs, logos, and brands.</p>
                             <p>I expand beyond the ordinary and form creative solutions.</p>
                             <p>Taking complex ideas and turning them into extraordinary websites, designs, and brands.</p>
