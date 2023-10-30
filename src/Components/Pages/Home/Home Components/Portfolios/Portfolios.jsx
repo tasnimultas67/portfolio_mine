@@ -11,11 +11,11 @@ const Portfolios = () => {
     useEffect(() => {
         fetch('https://portfoliobackendserver-tasnimul.up.railway.app/portfolio')
             .then(res => res.json())
-            .then(data =>setPortfolios(data))
+            .then(data => setPortfolios(data))
     },[])
     
     return (
-            <div className='py-28 md:py-32 bg-themeColor'>
+        <div className='py-28 md:py-32 bg-themeColor'>
             <div className='w-11/12 m-auto text-center sm:text-left'>
 
                 <motion.h1

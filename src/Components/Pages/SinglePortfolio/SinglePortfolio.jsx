@@ -28,7 +28,6 @@ const SinglePortfolio = () => {
                                 <p className="block text-sm text-white/90">{ portfolioCategory}</p>
                                 <h3 className="mt-2 text-5xl font-bold text-white mb-4">{portfolioTitle}</h3>
                                 <Link className="text-white flex items-center w-fit" to={portfolioLiveLink} target="_blank">{portfolioLiveLink} <ArrowTopRightOnSquareIcon className="h-4 w-4 ml-2 text-white"/></Link>
-                                {/* <Link  to={portfolioLiveLink} target="_blank"><p className="text-yellow-500 flex items-center">{portfolioLiveLink} <ArrowTopRightOnSquareIcon className="h-4 w-4 ml-2 text-yellow-500"/></p></Link> */}
                                 </div>
                             </div>
                     </motion.div>

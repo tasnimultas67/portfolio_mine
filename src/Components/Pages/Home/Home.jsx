@@ -5,7 +5,6 @@ import About from './Home Components/About/About';
 import Experiences from './Home Components/Experiences/Experiences';
 import Portfolios from './Home Components/Portfolios/Portfolios';
 import Skills from './Home Components/Skills/Skills';
-import ContactMeBanner from '../../Common/ContactMeBanner/ContactMeBanner';
 import ClientLogo from '../../Common/ClientLogo/ClientLogo';
 import WhyChoose from './Home Components/WhyChoose/WhyChoose';
 import Process from './Home Components/Process/Process';
@@ -14,7 +13,6 @@ import Process from './Home Components/Process/Process';
 const Home = () => {
     return (
         <div className='home relative top-0 left-0'>
-
             <Hero></Hero>
             <About></About>
             <WhyChoose></WhyChoose>
@@ -41,7 +39,6 @@ const Home = () => {
                     <ClientLogo></ClientLogo>
                 </motion.div>
             </div>
-            {/* <ContactMeBanner /> */}
 
         </div>
     );
